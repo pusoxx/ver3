@@ -41,7 +41,7 @@ figlet "backup" | lolcat
 backup
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan script AndyYuda"
+echo "Terimakasih sudah menggunakan layanan script WokszXD"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -52,7 +52,7 @@ figlet "Restore" | lolcat
 restore
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan script AndyYuda"
+echo "Terimakasih sudah menggunakan layanan script WokszXD"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -62,7 +62,7 @@ figlet "strt"
 strt
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan script AndyYuda"
+echo "Terimakasih sudah menggunakan layanan script WokszXD"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -71,7 +71,7 @@ then
 limitspeed
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan script AndyYuda"
+echo "Terimakasih sudah menggunakan layanan script WokszXD"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -81,7 +81,7 @@ then
 autobackup
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan script AndyYuda"
+echo "Terimakasih sudah menggunakan layanan script WokszXD"
 echo
 echo "--------------------------------------------------------"
 fi
