@@ -235,7 +235,7 @@ echo -e "$green          Install UDP              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/andyyuda/Bless/main/Tunnel/udp.sh && bash udp.sh
+wget https://raw.githubusercontent.com/pusoxx/Bless/main/Tunnel/udp.sh && bash udp.sh
 clear
 cat> /root/.profile << END
 # ~/.profile: executed by Bourne-compatible login shells.
