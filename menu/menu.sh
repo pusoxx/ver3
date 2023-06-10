@@ -1,246 +1,333 @@
-echo 'IyEvYmluL2Jhc2ggCiAjID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
-IAogdmx4PSQoZ3JlcCAtYyAtRSAiXiMmICIgIi9ldGMveHJheS9jb25maWcuanNvbiIpIAogbGV0
-IHZsYT0kdmx4LzIgCiB2bWM9JChncmVwIC1jIC1FICJeIyMjICIgIi9ldGMveHJheS9jb25maWcu
-anNvbiIpIAogbGV0IHZtYT0kdm1jLzIgCiBzc2gxPSIkKGF3ayAtRjogJyQzID49IDEwMDAgJiYg
-JDEgIT0gIm5vYm9keSIge3ByaW50ICQxfScgL2V0Yy9wYXNzd2QgfCB3YyAtbCkiIAogIAogdHJ4
-PSQoZ3JlcCAtYyAtRSAiXiMhICIgIi9ldGMveHJheS9jb25maWcuanNvbiIpIAogbGV0IHRyYT0k
-dHJ4LzIgCiBzc3g9JChncmVwIC1jIC1FICJeIyMgIiAiL2V0Yy94cmF5L2NvbmZpZy5qc29uIikg
-CiBsZXQgc3NhPSRzc3gvMiAKIENPTE9SMT0nXDAzM1swOzM1bScgCiBDT0xPUjI9J1wwMzNbMDsz
-OW0nIAogY2xlYXIKCkJVUklRICgpIHsKICAgIGN1cmwgLXNTIGh0dHBzOi8vcmF3LmdpdGh1YnVz
-ZXJjb250ZW50LmNvbS9wdXNveHgvcGVybWlzc2lvbi9tYWluL2lwbWluaSA+IC9yb290L3RtcAog
-ICAgZGF0YT0oIGBjYXQgL3Jvb3QvdG1wIHwgZ3JlcCAtRSAiXiMjIyAiIHwgYXdrICd7cHJpbnQg
-JDJ9J2AgKQogICAgZm9yIHVzZXIgaW4gIiR7ZGF0YVtAXX0iCiAgICBkbwogICAgZXhwPSggYGdy
-ZXAgLUUgIl4jIyMgJHVzZXIiICIvcm9vdC90bXAiIHwgYXdrICd7cHJpbnQgJDN9J2AgKQogICAg
-ZDE9KGBkYXRlIC1kICIkZXhwIiArJXNgKQogICAgZDI9KGBkYXRlIC1kICIkYmlqaSIgKyVzYCkK
-ICAgIGV4cDI9JCgoIChkMSAtIGQyKSAvIDg2NDAwICkpCiAgICBpZiBbWyAiJGV4cDIiIC1sZSAi
-MCIgXV07IHRoZW4KICAgIGVjaG8gJHVzZXIgPiAvZXRjLy4kdXNlci5pbmkKICAgIGVsc2UKICAg
-IHJtIC1mIC9ldGMvLiR1c2VyLmluaSA+IC9kZXYvbnVsbCAyPiYxCiAgICBmaQogICAgZG9uZQog
-ICAgcm0gLWYgL3Jvb3QvdG1wCn0KCk1ZSVA9JChjdXJsIC1zUyBpcHY0LmljYW5oYXppcC5jb20p
-Ck5hbWU9JChjdXJsIC1zUyBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vcHVzb3h4
-L3Blcm1pc3Npb24vbWFpbi9pcG1pbmkgfCBncmVwICRNWUlQIHwgYXdrICd7cHJpbnQgJDJ9JykK
-ZWNobyAkTmFtZSA+IC91c3IvbG9jYWwvZXRjLy4kTmFtZS5pbmkKQ2VrT25lPSQoY2F0IC91c3Iv
-bG9jYWwvZXRjLy4kTmFtZS5pbmkpCgpCbG9tYW4gKCkgewppZiBbIC1mICIvZXRjLy4kTmFtZS5p
-bmkiIF07IHRoZW4KQ2VrVHdvPSQoY2F0IC9ldGMvLiROYW1lLmluaSkKICAgIGlmIFsgIiRDZWtP
-bmUiID0gIiRDZWtUd28iIF07IHRoZW4KICAgICAgICByZXM9IkV4cGlyZWQiCiAgICBmaQplbHNl
-CnJlcz0iUGVybWlzc2lvbiBBY2NlcHRlZC4uLiIKZmkKfQoKUEVSTUlTU0lPTiAoKSB7CiAgICBN
-WUlQPSQoY3VybCAtc1MgaXB2NC5pY2FuaGF6aXAuY29tKQogICAgSVpJTj0kKGN1cmwgLXNTIGh0
-dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9wdXNveHgvcGVybWlzc2lvbi9tYWluL2lw
-bWluaSB8IGF3ayAne3ByaW50ICQ0fScgfCBncmVwICRNWUlQKQogICAgaWYgWyAiJE1ZSVAiID0g
-IiRJWklOIiBdOyB0aGVuCiAgICBCbG9tYW4KICAgIGVsc2UKICAgIHJlcz0iUGVybWlzc2lvbiBE
-ZW5pZWQhIgogICAgZmkKICAgIEJVUklRCn0KcmVkPSdcZVsxOzMxbScKZ3JlZW49J1xlWzE7MzJt
-JwpOQz0nXGVbMG0nCmdyZWVuKCkgeyBlY2hvIC1lICJcXDAzM1szMjsxbSR7Kn1cXDAzM1swbSI7
-IH0KcmVkKCkgeyBlY2hvIC1lICJcXDAzM1szMTsxbSR7Kn1cXDAzM1swbSI7IH0KUEVSTUlTU0lP
-TgoKaWYgWyAiJHJlcyIgPSAiRXhwaXJlZCIgXTsgdGhlbgpFeHA9IlxlWzM2bUV4cGlyZWRcMDMz
-WzBtIgplbHNlCkV4cD0kKGN1cmwgLXNTIGh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNv
-bS9wdXNveHgvcGVybWlzc2lvbi9tYWluL2lwbWluaSB8IGdyZXAgJE1ZSVAgfCBhd2sgJ3twcmlu
-dCAkM30nKQpmaQoKQklCbGFjaz0nXDAzM1sxOzkwbScgICAgICAjIEJsYWNrCkJJUmVkPSdcMDMz
-WzE7OTFtJyAgICAgICAgIyBSZWQKQklHcmVlbj0nXDAzM1sxOzkybScgICAgICAjIEdyZWVuCkJJ
-WWVsbG93PSdcMDMzWzE7OTNtJyAgICAgIyBZZWxsb3cKQklCbHVlPSdcMDMzWzE7OTRtJyAgICAg
-ICAjIEJsdWUKQklQdXJwbGU9J1wwMzNbMTs5NW0nICAgICAjIFB1cnBsZQpCSUN5YW49J1wwMzNb
-MTs5Nm0nICAgICAgICMgQ3lhbgpCSVdoaXRlPSdcMDMzWzE7OTdtJyAgICAgICMgV2hpdGUKVVdo
-aXRlPSdcMDMzWzQ7MzdtJyAgICAgICAjIFdoaXRlCk9uX0lQdXJwbGU9J1wwMzNbMDsxMDVtJyAg
-IwpPbl9JUmVkPSdcMDMzWzA7MTAxbScKSUJsYWNrPSdcMDMzWzA7OTBtJyAgICAgICAjIEJsYWNr
-CklSZWQ9J1wwMzNbMDs5MW0nICAgICAgICAgIyBSZWQKSUdyZWVuPSdcMDMzWzA7OTJtJyAgICAg
-ICAjIEdyZWVuCklZZWxsb3c9J1wwMzNbMDs5M20nICAgICAgIyBZZWxsb3cKSUJsdWU9J1wwMzNb
-MDs5NG0nICAgICAgICAjIEJsdWUKSVB1cnBsZT0nXDAzM1swOzk1bScgICAgICAjIFB1cnBsZQpJ
-Q3lhbj0nXDAzM1swOzk2bScgICAgICAgICMgQ3lhbgpJV2hpdGU9J1wwMzNbMDs5N20nICAgICAg
-ICMgV2hpdGUKTkM9J1xlWzBtJwojRG93bmxvYWQvVXBsb2FkIHRvZGF5CmR0b2RheT0iJCh2bnN0
-YXQgLWkgZXRoMCB8IGdyZXAgInRvZGF5IiB8IGF3ayAne3ByaW50ICQyIiAic3Vic3RyICgkMywg
-MSwgMSl9JykiCnV0b2RheT0iJCh2bnN0YXQgLWkgZXRoMCB8IGdyZXAgInRvZGF5IiB8IGF3ayAn
-e3ByaW50ICQ1IiAic3Vic3RyICgkNiwgMSwgMSl9JykiCnR0b2RheT0iJCh2bnN0YXQgLWkgZXRo
-MCB8IGdyZXAgInRvZGF5IiB8IGF3ayAne3ByaW50ICQ4IiAic3Vic3RyICgkOSwgMSwgMSl9Jyki
-CiNEb3dubG9hZC9VcGxvYWQgeWVzdGVyZGF5CmR5ZXN0PSIkKHZuc3RhdCAtaSBldGgwIHwgZ3Jl
-cCAieWVzdGVyZGF5IiB8IGF3ayAne3ByaW50ICQyIiAic3Vic3RyICgkMywgMSwgMSl9JykiCnV5
-ZXN0PSIkKHZuc3RhdCAtaSBldGgwIHwgZ3JlcCAieWVzdGVyZGF5IiB8IGF3ayAne3ByaW50ICQ1
-IiAic3Vic3RyICgkNiwgMSwgMSl9JykiCnR5ZXN0PSIkKHZuc3RhdCAtaSBldGgwIHwgZ3JlcCAi
-eWVzdGVyZGF5IiB8IGF3ayAne3ByaW50ICQ4IiAic3Vic3RyICgkOSwgMSwgMSl9JykiCiNEb3du
-bG9hZC9VcGxvYWQgY3VycmVudCBtb250aApkbW9uPSIkKHZuc3RhdCAtaSBldGgwIC1tIHwgZ3Jl
-cCAiYGRhdGUgKyIlYiAnJXkiYCIgfCBhd2sgJ3twcmludCAkMyIgInN1YnN0ciAoJDQsIDEsIDEp
-fScpIgp1bW9uPSIkKHZuc3RhdCAtaSBldGgwIC1tIHwgZ3JlcCAiYGRhdGUgKyIlYiAnJXkiYCIg
-fCBhd2sgJ3twcmludCAkNiIgInN1YnN0ciAoJDcsIDEsIDEpfScpIgp0bW9uPSIkKHZuc3RhdCAt
-aSBldGgwIC1tIHwgZ3JlcCAiYGRhdGUgKyIlYiAnJXkiYCIgfCBhd2sgJ3twcmludCAkOSIgInN1
-YnN0ciAoJDEwLCAxLCAxKX0nKSIKY2xlYXIKCiMgLy8gRXhwb3J0aW5nIExhbmd1YWdlIHRvIFVU
-Ri04CgpleHBvcnQgTEFORz0nZW5fVVMuVVRGLTgnCmV4cG9ydCBMQU5HVUFHRT0nZW5fVVMuVVRG
-LTgnCgoKIyAvLyBFeHBvcnQgQ29sb3IgJiBJbmZvcm1hdGlvbgpleHBvcnQgUkVEPSdcMDMzWzA7
-MzFtJwpleHBvcnQgR1JFRU49J1wwMzNbMDszMm0nCmV4cG9ydCBZRUxMT1c9J1wwMzNbMDszM20n
-CmV4cG9ydCBCTFVFPSdcMDMzWzA7MzRtJwpleHBvcnQgUFVSUExFPSdcMDMzWzA7MzVtJwpleHBv
-cnQgQ1lBTj0nXDAzM1swOzM2bScKZXhwb3J0IExJR0hUPSdcMDMzWzA7MzdtJwpleHBvcnQgTkM9
-J1wwMzNbMG0nCgojIyMjIyMjIyMjIy0gRU5EIENPTE9SIENPREUgLSMjIyMjIyMjIyMKdHJhbT0k
-KCBmcmVlIC1oIHwgYXdrICdOUj09MiB7cHJpbnQgJDJ9JyApCnVyYW09JCggZnJlZSAtaCB8IGF3
-ayAnTlI9PTIge3ByaW50ICQzfScgKQpJU1A9JChjdXJsIC1zIGlwaW5mby5pby9vcmcgfCBjdXQg
-LWQgIiAiIC1mIDItMTAgKQpDSVRZPSQoY3VybCAtcyBpcGluZm8uaW8vY2l0eSApCgojIC8vIEV4
-cG9ydCBCYW5uZXIgU3RhdHVzIEluZm9ybWF0aW9uCmV4cG9ydCBFUk9SPSJbJHtSRUR9IEVST1Ig
-JHtOQ31dIgpleHBvcnQgSU5GTz0iWyR7WUVMTE9XfSBJTkZPICR7TkN9XSIKZXhwb3J0IE9LRVk9
-Ilske0dSRUVOfSBPS0VZICR7TkN9XSIKZXhwb3J0IFBFTkRJTkc9Ilske1lFTExPV30gUEVORElO
-RyAke05DfV0iCmV4cG9ydCBTRU5EPSJbJHtZRUxMT1d9IFNFTkQgJHtOQ31dIgpleHBvcnQgUkVD
-RUlWRT0iWyR7WUVMTE9XfSBSRUNFSVZFICR7TkN9XSIKCiMgLy8gRXhwb3J0IEFsaWduCmV4cG9y
-dCBCT0xEPSJcZVsxbSIKZXhwb3J0IFdBUk5JTkc9IiR7UkVEfVxlWzVtIgpleHBvcnQgVU5ERVJM
-SU5FPSJcZVs0bSIKCiMgVE9UQUwgUkFNCnRvdGFsX3JhbT1gIGdyZXAgIk1lbVRvdGFsOiAiIC9w
-cm9jL21lbWluZm8gfCBhd2sgJ3sgcHJpbnQgJDJ9J2AKdG90YWxyYW09JCgoJHRvdGFsX3JhbS8x
-MDI0KSkKCnBlcnNlbm1lbW9yaT0iJChlY2hvICJzY2FsZT0yOyAkdXNtZW0qMTAwLyR0b21lbSIg
-fCBiYykiCiNwZXJzZW5jcHU9CnBlcnNlbmNwdT0iJChlY2hvICJzY2FsZT0yOyAkY3B1MSskY3B1
-MiIgfCBiYykiCgojIC8vIENsZWFyCmNsZWFyCmNsZWFyICYmIGNsZWFyICYmIGNsZWFyCmNsZWFy
-O2NsZWFyO2NsZWFyCmNlaz0kKHNlcnZpY2Ugc3NoIHN0YXR1cyB8IGdyZXAgYWN0aXZlIHwgY3V0
-IC1kICcgJyAtZjUpCmlmIFsgIiRjZWsiID0gImFjdGl2ZSIgXTsgdGhlbgpzdGF0PS1mNQplbHNl
-CnN0YXQ9LWY3CmZpCnNzaD0kKHNlcnZpY2Ugc3NoIHN0YXR1cyB8IGdyZXAgYWN0aXZlIHwgY3V0
-IC1kICcgJyAkc3RhdCkKaWYgWyAiJHNzaCIgPSAiYWN0aXZlIiBdOyB0aGVuCnJlc3NoPSIke2dy
-ZWVufU9OJHtOQ30iCmVsc2UKcmVzc2g9IiR7cmVkfU9GRiR7TkN9IgpmaQpzc2hzdHVuZWw9JChz
-ZXJ2aWNlIHN0dW5uZWw0IHN0YXR1cyB8IGdyZXAgYWN0aXZlIHwgY3V0IC1kICcgJyAkc3RhdCkK
-aWYgWyAiJHNzaHN0dW5lbCIgPSAiYWN0aXZlIiBdOyB0aGVuCnJlc3N0PSIke2dyZWVufU9OJHtO
-Q30iCmVsc2UKcmVzc3Q9IiR7cmVkfU9GRiR7TkN9IgpmaQpzc2h3cz0kKHNlcnZpY2Ugd3Mtc3R1
-bm5lbCBzdGF0dXMgfCBncmVwIGFjdGl2ZSB8IGN1dCAtZCAnICcgJHN0YXQpCmlmIFsgIiRzc2h3
-cyIgPSAiYWN0aXZlIiBdOyB0aGVuCnJlc3NzaHdzPSIke2dyZWVufU9OJHtOQ30iCmVsc2UKcmVz
-c3Nod3M9IiR7cmVkfU9GRiR7TkN9IgpmaQpuZ3g9JChzZXJ2aWNlIG5naW54IHN0YXR1cyB8IGdy
-ZXAgYWN0aXZlIHwgY3V0IC1kICcgJyAkc3RhdCkKaWYgWyAiJG5neCIgPSAiYWN0aXZlIiBdOyB0
-aGVuCnJlc25neD0iJHtncmVlbn1PTiR7TkN9IgplbHNlCnJlc25neD0iJHtyZWR9T0ZGJHtOQ30i
-CmZpCmRicj0kKHNlcnZpY2UgZHJvcGJlYXIgc3RhdHVzIHwgZ3JlcCBhY3RpdmUgfCBjdXQgLWQg
-JyAnICRzdGF0KQppZiBbICIkZGJyIiA9ICJhY3RpdmUiIF07IHRoZW4KcmVzZGJyPSIke2dyZWVu
-fU9OJHtOQ30iCmVsc2UKcmVzZGJyPSIke3JlZH1PRkYke05DfSIKZmkKdjJyPSQoc2VydmljZSB4
-cmF5IHN0YXR1cyB8IGdyZXAgYWN0aXZlIHwgY3V0IC1kICcgJyAkc3RhdCkKaWYgWyAiJHYyciIg
-PSAiYWN0aXZlIiBdOyB0aGVuCnJlc3Yycj0iJHtncmVlbn1PTiR7TkN9IgplbHNlCnJlc3Yycj0i
-JHtyZWR9T0ZGJHtOQ30iCmZpCmZ1bmN0aW9uIGFkZGhvc3QoKXsKY2xlYXIKZWNobyAtZSAiXDAz
-M1swOzM0beKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKU
-geKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgVww
-MzNbMG0iCmVjaG8gIiIKcmVhZCAtcnAgIkRvbWFpbi9Ib3N0OiAiIC1lIGhvc3QKZWNobyAiIgpp
-ZiBbIC16ICRob3N0IF07IHRoZW4KZWNobyAiPz8/PyIKZWNobyAtZSAiXDAzM1swOzM0beKUgeKU
-geKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKU
-geKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgVwwMzNbMG0iCnJlYWQg
-LW4gMSAtcyAtciAtcCAiUHJlc3MgYW55IGtleSB0byBiYWNrIG9uIG1lbnUiCnNldHRpbmctbWVu
-dQplbHNlCmVjaG8gIklQPSRob3N0IiA+IC92YXIvbGliL3NjcnotcHJlbS9pcHZwcy5jb25mCmVj
-aG8gLWUgIlwwMzNbMDszNG3ilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHi
-lIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHi
-lIHilIHilIFcMDMzWzBtIgplY2hvICJEb250IGZvcmdldCB0byByZW5ldyBjZXJ0IgplY2hvICIi
-CnJlYWQgLW4gMSAtcyAtciAtcCAiUHJlc3MgYW55IGtleSB0byBiYWNrIG9uIG1lbnUiCm1lbnUK
-ZmkKfQpmdW5jdGlvbiBnZW5zc2woKXsKY2xlYXIKc3lzdGVtY3RsIHN0b3AgbmdpbngKZG9tYWlu
-PSQoY2F0IC92YXIvbGliL3NjcnotcHJlbS9pcHZwcy5jb25mIHwgY3V0IC1kJz0nIC1mMikKQ2Vr
-PSQobHNvZiAtaTo4MCB8IGN1dCAtZCcgJyAtZjEgfCBhd2sgJ05SPT0yIHtwcmludCAkMX0nKQpp
-ZiBbWyAhIC16ICIkQ2VrIiBdXTsgdGhlbgpzbGVlcCAxCmVjaG8gLWUgIlsgJHtyZWR9V0FSTklO
-RyR7TkN9IF0gRGV0ZWN0ZWQgcG9ydCA4MCB1c2VkIGJ5ICRDZWsgIiAKc3lzdGVtY3RsIHN0b3Ag
-JENlawpzbGVlcCAyCmVjaG8gLWUgIlsgJHtncmVlbn1JTkZPJHtOQ30gXSBQcm9jZXNzaW5nIHRv
-IHN0b3AgJENlayAiIApzbGVlcCAxCmZpCmVjaG8gLWUgIlsgJHtncmVlbn1JTkZPJHtOQ30gXSBT
-dGFydGluZyByZW5ldyBjZXJ0Li4uICIgCnNsZWVwIDIKL3Jvb3QvLmFjbWUuc2gvYWNtZS5zaCAt
-LXNldC1kZWZhdWx0LWNhIC0tc2VydmVyIGxldHNlbmNyeXB0Ci9yb290Ly5hY21lLnNoL2FjbWUu
-c2ggLS1pc3N1ZSAtZCAkZG9tYWluIC0tc3RhbmRhbG9uZSAtayBlYy0yNTYKfi8uYWNtZS5zaC9h
-Y21lLnNoIC0taW5zdGFsbGNlcnQgLWQgJGRvbWFpbiAtLWZ1bGxjaGFpbnBhdGggL2V0Yy94cmF5
-L3hyYXkuY3J0IC0ta2V5cGF0aCAvZXRjL3hyYXkveHJheS5rZXkgLS1lY2MKZWNobyAtZSAiWyAk
-e2dyZWVufUlORk8ke05DfSBdIFJlbmV3IGNlcnQgZG9uZS4uLiAiIApzbGVlcCAyCmVjaG8gLWUg
-IlsgJHtncmVlbn1JTkZPJHtOQ30gXSBTdGFydGluZyBzZXJ2aWNlICRDZWsgIiAKc2xlZXAgMgpl
-Y2hvICRkb21haW4gPiAvZXRjL3hyYXkvZG9tYWluCnN5c3RlbWN0bCByZXN0YXJ0IHhyYXkKc3lz
-dGVtY3RsIHJlc3RhcnQgbmdpbngKZWNobyAtZSAiWyAke2dyZWVufUlORk8ke05DfSBdIEFsbCBm
-aW5pc2hlZC4uLiAiIApzbGVlcCAwLjUKZWNobyAiIgpyZWFkIC1uIDEgLXMgLXIgLXAgIlByZXNz
-IGFueSBrZXkgdG8gYmFjayBvbiBtZW51IgptZW51Cn0KZXhwb3J0IHNlbT0kKCBjdXJsIC1zIGh0
-dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9wdXNveHgvcGVybWlzc2lvbi9tYWluL3Zl
-cnNpb25zKQpleHBvcnQgcGFrPSQoIGNhdCAvaG9tZS8udmVyKQpJUFZQUz0kKGN1cmwgLXMgaXBp
-bmZvLmlvL2lwICkKY2xlYXIKZWNobyAtZSAiJHtDWUFOfeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKU
-geKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKU
-geKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKU
-geKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgVwwMzNbMG0k
-e05DfSIKZWNobyAtZSAiXEVbNDQ7MTszOW0gICAgICAgICAgICAgICAgICAgICDih7EgSU5GT1JN
-QVNJIFZQUyDih7IgICAgICAgICAgICAgICAgICAgICAgICBcRVswbSIKZWNobyAtZSAiJHtDWUFO
-feKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKU
-geKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKU
-geKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKU
-geKUgeKUgeKUgeKUgeKUgVwwMzNbMG0ke05DfSIKCmVjaG8gLWUgIiR7QklHcmVlbn3ilqEgU2Vy
-dmVyIFVwdGltZSAgICAgICA9ICR7QklDeWFufSQoIHVwdGltZSAtcCAgfCBjdXQgLWQgIiAiIC1m
-IDItMTAwMDAgKSAke05DfSIKZWNobyAtZSAiJHtCSUdyZWVufeKWoSBDdXJyZW50IFRpbWUgICAg
-ICAgID0gJHtCSUN5YW59JCggZGF0ZSAtZCAiMCBkYXlzIiArIiVkLSVtLSVZIHwgJVgiICkke05D
-fSIKZWNobyAtZSAiJHtCSUdyZWVufeKWoSBPcGVyYXRpbmcgU3lzdGVtICAgID0gJHtCSUN5YW59
-JCggY2F0IC9ldGMvb3MtcmVsZWFzZSB8IGdyZXAgLXcgUFJFVFRZX05BTUUgfCBzZWQgJ3MvUFJF
-VFRZX05BTUUvL2cnIHwgc2VkICdzLz0vL2cnIHwgc2VkICdzLyIvL2cnICkgKCAkKCB1bmFtZSAt
-bSkgKSR7TkN9IgplY2hvIC1lICIke0JJR3JlZW594pahIEN1cnJlbnQgRG9tYWluICAgICAgPSAk
-e0JJQ3lhbn0kKCBjYXQgL2V0Yy94cmF5L2RvbWFpbiApJHtOQ30iCmVjaG8gLWUgIiR7QklHcmVl
-bn3ilqEgSnVtbGFoIFJhbSAgICAgICAgICA9ICR7QklDeWFufSR7dG90YWxyYW19TUIiCmVjaG8g
-LWUgIiR7QklHcmVlbn3ilqEgU2VydmVyIFJlc291cmNlICAgICA9ICR7QklDeWFufSR1cmFtIC8g
-JHRyYW0iCmVjaG8gLWUgIiR7QklHcmVlbn3ilqEgQ2xpZW50cyBOYW1lICAgICAgICA9ICR7QklD
-eWFufSROYW1lJHtOQ30iCmVjaG8gLWUgIiR7QklHcmVlbn3ilqEgRXhwaXJlZCBTY3JpcHQgVlBT
-ICA9ICR7QklDeWFufSRFeHAke05DfSIKZWNobyAtZSAiJHtCSUdyZWVufeKWoSBBdXRvU2NyaXB0
-IEJ5IERldiAgID0gJHtCSUN5YW59V29rc3pYRCAke05DfSIKZWNobyAtZSAiJHtCSUdyZWVufeKW
-oSBLYXRhIEthdGEgICAgICAgICAgID0gJHtCSUN5YW59U0VNVUEgQlVUVUggUFJPU0VTISEgJHtO
-Q30iCgplY2hvIC1lICIke0JJQ3lhbn0g4pSM4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA
-4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA
-4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA
-4pSA4pSA4pSA4pSA4pSA4pSQJHtOQ30iCmVjaG8gLWUgIiR7QklDeWFufSDilIIgICAgICAgICAg
-ICAgICAgICAke0JJV2hpdGV9JHtVV2hpdGV9V29rc3pYRCBUVU5FTElORyR7TkN9IgplY2hvIC1l
-ICIke0JJQ3lhbn0g4pSCIgplY2hvIC1lICIgJHtCSUN5YW594pSCICAke0JJQ3lhbn1Vc2UgQ29y
-ZSAgICAgICAgOiAgJHtCSVB1cnBsZX1TaW1wbGVTY3JpcHQke05DfSIKZWNobyAtZSAiICR7QklD
-eWFufeKUgiAgJHtCSUN5YW59SVAtVlBTICAgICAgICAgIDogICR7QklZZWxsb3d9JElQVlBTJHtO
-Q30iCmVjaG8gLWUgIiAke0JJQ3lhbn3ilIIgICR7QklDeWFufUlTUC1WUFMgICAgICAgICA6ICAk
-e0JJWWVsbG93fSRJU1Ake05DfSIgIAplY2hvIC1lICIgJHtCSUN5YW594pSU4pSA4pSA4pSA4pSA
-4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA
-4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA
-4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSYJHtOQ30iCgplY2hvIC1lICIke0JJ
-V2hpdGV9SmFuZ2FuIHBlcm5haCBtZW55ZXNhbCBha2FuIHNlbXVhIHlhbmcga2l0YSBhd2FsaSR7
-TkN9IgplY2hvIC1lICIke0JJV2hpdGV9VGFwaSBqYWxhbmkgc2FqYSBhcGEgeWFuZyB0ZWxhaCB0
-ZXJqYWRpLiR7TkN9IiAKZWNobyAtZSAiJHtCSVdoaXRlfSMjV29rc3pYRCR7TkN9IgoKZWNobyAt
-ZSAiJHtHUkVFTn3ilIzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDi
-lIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDi
-lIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJAke05D
-fSIgCmVjaG8gLWUgIiR7R1JFRU594pSCICBcMDMzWzBtICR7Qk9MRH0ke1lFTExPV31TU0ggICAg
-IFZNRVNTICAgICAgIFZMRVNTICAgICAgVFJPSkFOICROQyIgCmVjaG8gLWUgIiR7R1JFRU594pSC
-ICBcMDMzWzBtICR7Qmx1ZX0gJHNzaDEgICAgICAgICR2bWEgICAgICAgICAgICR2bGEgICAgICAg
-ICAgJHRyYSAkTkMiIAplY2hvIC1lICIke0dSRUVOfeKUlOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKU
-gOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKU
-gOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKU
-gOKUgOKUgOKUgOKUgOKUmCR7TkN9IiAKICAKZWNobyAtZSAiICAgICAke0JJQ3lhbn0gU1NIICR7
-TkN9OiAkcmVzc2giIiAke0JJQ3lhbn0gTkdJTlggJHtOQ306ICRyZXNuZ3giIiAke0JJQ3lhbn0g
-IFhSQVkgJHtOQ306ICRyZXN2MnIiIiAke0JJQ3lhbn0gVFJPSkFOICR7TkN9OiAkcmVzdjJyIgpl
-Y2hvIC1lICIgICAke0JJQ3lhbn0gICAgIFNUVU5ORUwgJHtOQ306ICRyZXNzdCIgIiR7QklDeWFu
-fSBEUk9QQkVBUiAke05DfTogJHJlc2RiciIgIiR7QklDeWFufSBTU0gtV1MgJHtOQ306ICRyZXNz
-c2h3cyIKZWNobyAtZSAiJHtCSUN5YW59IOKUjOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKU
-gOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKU
-gOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKU
-gOKUgOKUgOKUgOKUgOKUgOKUkCR7TkN9IgplY2hvIC1lICIgICAgICR7QklDeWFufVske0JJV2hp
-dGV9MDEke0JJQ3lhbn1dIFNTSCAgICAgICAke0JJQ3lhbn1bJHtCSVllbGxvd31NZW51JHtCSUN5
-YW59XSR7TkN9IiAgICAiICAgICAke0JJQ3lhbn1bJHtCSVdoaXRlfTA2JHtCSUN5YW59XSBUUklB
-TEwgICAgJHtCSUN5YW59WyR7QklZZWxsb3d9TWVudSR7QklDeWFufV0ke05DfSIgIiR7QklDeWFu
-fSDilIIiCmVjaG8gLWUgIiAgICAgJHtCSUN5YW59WyR7QklXaGl0ZX0wMiR7QklDeWFufV0gVk1F
-U1MgICAgICR7QklDeWFufVske0JJWWVsbG93fU1lbnUke0JJQ3lhbn1dJHtOQ30iICIgICAgICR7
-QklDeWFufVske0JJV2hpdGV9MDcke0JJQ3lhbn1dIEJBQ0tVUCAgICAke0JJQ3lhbn1bJHtCSVll
-bGxvd31NZW51JHtCSUN5YW59XSR7TkN9IiAiJHtCSUN5YW59IOKUgiIKZWNobyAtZSAiICAgICAk
-e0JJQ3lhbn1bJHtCSVdoaXRlfTAzJHtCSUN5YW59XSBWTEVTUyAgICAgJHtCSUN5YW59WyR7QklZ
-ZWxsb3d9TWVudSR7QklDeWFufV0ke05DfSIgICIgICAgICR7QklDeWFufVske0JJV2hpdGV9MDgk
-e0JJQ3lhbn1dIEFERC1IT1NUICAgICAgJHtOQ30iICIke0JJQ3lhbn0gICDilIIiCmVjaG8gLWUg
-IiAgICAgJHtCSUN5YW59WyR7QklXaGl0ZX0wNCR7QklDeWFufV0gVFJPSkFOICAgICR7QklDeWFu
-fVske0JJWWVsbG93fU1lbnUke0JJQ3lhbn1dJHtOQ30iICIgICAgICR7QklDeWFufVske0JJV2hp
-dGV9MDkke0JJQ3lhbn1dIFJVTk5JTkcgU0VSVklDRSAgIOKUgiIKZWNobyAtZSAiICAgICAke0JJ
-Q3lhbn1bJHtCSVdoaXRlfTA1JHtCSUN5YW59XSBTRVRUSU5HUyAgJHtCSUN5YW59WyR7QklZZWxs
-b3d9TWVudSR7QklDeWFufV0ke05DfSIgICIgICAgICR7QklDeWFufVske0JJV2hpdGV9MTAke0JJ
-Q3lhbn1dIFNFVCBSRUJPT1Qke0JJQ3lhbn1bJHtCSVllbGxvd31NZW51JHtCSUN5YW59XSR7TkN9
-IiAiJHtCSUN5YW59IOKUgiR7TkN9IgplY2hvIC1lICIgJHtCSUN5YW594pSU4pSA4pSA4pSA4pSA
-4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA
-4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA
-4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSYJHtOQ30iCgplY2hvIC1lICIke0JJ
-Q3lhbn0g4pSM4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA
-4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA
-4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSQ
-JHtOQ30iCmVjaG8gLWUgIiR7QklDeWFufSDilIIkTkMgJHtCSUN5YW59SEFSSSBJTkkke05DfTog
-JHtyZWR9JHR0b2RheSROQyAke0JJQ3lhbn1CVUxBTiR7TkN9OiAke3JlZH0kdG1vbiROQyAkTkMi
-CmVjaG8gLWUgIiR7QklDeWFufSDilJTilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDi
-lIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDi
-lIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDi
-lIDilIDilIDilIDilJgke05DfSIKREFURT0kKGRhdGUgKyclZCAlQiAlWScpCmRhdGVkaWZmKCkg
-ewogICAgZDE9JChkYXRlIC1kICIkMSIgKyVzKQogICAgZDI9JChkYXRlIC1kICIkMiIgKyVzKQog
-ICAgZWNobyAtZSAiICRCSUN5YW7ilIIke05DfSAgIEV4cGlyeSBJbiAgICAgIDogJCgoIChkMSAt
-IGQyKSAvIDg2NDAwICkpIERheXMgJE5DIgp9Cm1haT0iZGF0ZWRpZmYgIiRFeHAiICIkREFURSIi
-CmVjaG8gLWUgIiAkQklDeWFu4pSM4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA
-4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA
-4pSA4pSA4pSA4pSA4pSA4pSA4pSQJHtOQ30iCmVjaG8gLWUgIiAkQklDeWFu4pSCJHtOQ30gICBW
-ZXJzaW9uICAgICAgICA6ICQoY2F0IC9vcHQvLnZlcikgNC4wIExpdGUgJHtOQ30iCmVjaG8gLWUg
-IiAkQklDeWFu4pSCJHtOQ30gICBDbGllbnQgICAgICAgICA6XDAzM1sxOzM2bSAkTmFtZSBcZVsw
-bSIKZWNobyAtZSAiICRCSUN5YW7ilIIke05DfSAgIE9yZGVyIEJ5ICAgICAgIDogJHtCSVJlZH1X
-b2tzelhEIFZQTiR7TkN9IgppZiBbICRleHAgXDwgMTAwMCBdOwp0aGVuCmVjaG8gLWUgIiAgICRC
-SUN5YW7ilIIkTkMgTGljZW5zZSAgICAgIDogJHtHUkVFTn0kc2lzYV9oYXJpJE5DIERheXMgVGVy
-c2lzYSAkTkMiCmVsc2UKICAgIGRhdGVkaWZmICIkRXhwIiAiJERBVEUiCmZpOwplY2hvIC1lICIg
-JEJJQ3lhbuKUlOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKU
-gOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKU
-gOKUgOKUgOKUmCR7TkN9IgplY2hvCnJlYWQgLXAgIiBTZWxlY3QgbWVudSA6ICIgb3B0CmVjaG8g
-LWUgIiIKY2FzZSAkb3B0IGluCjEpIGNsZWFyIDsgbWVudS1zc2ggOzsKMikgY2xlYXIgOyBtZW51
-LXZtZXNzIDs7CjMpIGNsZWFyIDsgbWVudS12bGVzcyA7Owo0KSBjbGVhciA7IG1lbnUtdHJvamFu
-IDs7CjUpIGNsZWFyIDsgbWVudS1zZXQgOzsKNikgY2xlYXIgOyBtZW51LXRyaWFsIDs7CjcpIGNs
-ZWFyIDsgbWVudS1iYWNrdXAgOzsKOCkgY2xlYXIgOyBhZGRob3N0IDs7CjkpIGNsZWFyIDsgcnVu
-bmluZyA7OwoxMCkgY2xlYXIgOyBqYW0gOzsKNjk2OSkgY2xlYXIgOyB3Z2V0IGh0dHBzOi8vcmF3
-LmdpdGh1YnVzZXJjb250ZW50LmNvbS9wdXNveHgvVmVyMy9tYWluL3VwZGF0ZS5zaCAmJiBjaG1v
-ZCAreCB1cGRhdGUuc2ggJiYgLi91cGRhdGUuc2ggJiYgcm0gLWYgL3Jvb3QvdXBkYXRlLnNoIDs7
-CjApIGNsZWFyIDsgbWVudSA7Owp4KSBleGl0IDs7CiopIGVjaG8gLWUgIiIgOyBlY2hvICJQcmVz
-cyBhbnkga2V5IHRvIGJhY2sgZXhpdCIgOyBzbGVlcCAxIDsgZXhpdCA7Owplc2FjCg==
-' | base64 -d | sh 
+#!/bin/bash 
+ # ========================================= 
+ vlx=$(grep -c -E "^#& " "/etc/xray/config.json") 
+ let vla=$vlx/2 
+ vmc=$(grep -c -E "^### " "/etc/xray/config.json") 
+ let vma=$vmc/2 
+ ssh1="$(awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd | wc -l)" 
+  
+ trx=$(grep -c -E "^#! " "/etc/xray/config.json") 
+ let tra=$trx/2 
+ ssx=$(grep -c -E "^## " "/etc/xray/config.json") 
+ let ssa=$ssx/2 
+ COLOR1='\033[0;35m' 
+ COLOR2='\033[0;39m' 
+ clear
+
+BURIQ () {
+    curl -sS https://raw.githubusercontent.com/pusoxx/permission/main/ipmini > /root/tmp
+    data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
+    for user in "${data[@]}"
+    do
+    exp=( `grep -E "^### $user" "/root/tmp" | awk '{print $3}'` )
+    d1=(`date -d "$exp" +%s`)
+    d2=(`date -d "$biji" +%s`)
+    exp2=$(( (d1 - d2) / 86400 ))
+    if [[ "$exp2" -le "0" ]]; then
+    echo $user > /etc/.$user.ini
+    else
+    rm -f /etc/.$user.ini > /dev/null 2>&1
+    fi
+    done
+    rm -f /root/tmp
+}
+
+MYIP=$(curl -sS ipv4.icanhazip.com)
+Name=$(curl -sS https://raw.githubusercontent.com/pusoxx/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+echo $Name > /usr/local/etc/.$Name.ini
+CekOne=$(cat /usr/local/etc/.$Name.ini)
+
+Bloman () {
+if [ -f "/etc/.$Name.ini" ]; then
+CekTwo=$(cat /etc/.$Name.ini)
+    if [ "$CekOne" = "$CekTwo" ]; then
+        res="Expired"
+    fi
+else
+res="Permission Accepted..."
+fi
+}
+
+PERMISSION () {
+    MYIP=$(curl -sS ipv4.icanhazip.com)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/pusoxx/permission/main/ipmini | awk '{print $4}' | grep $MYIP)
+    if [ "$MYIP" = "$IZIN" ]; then
+    Bloman
+    else
+    res="Permission Denied!"
+    fi
+    BURIQ
+}
+red='\e[1;31m'
+green='\e[1;32m'
+NC='\e[0m'
+green() { echo -e "\\033[32;1m${*}\\033[0m"; }
+red() { echo -e "\\033[31;1m${*}\\033[0m"; }
+PERMISSION
+
+if [ "$res" = "Expired" ]; then
+Exp="\e[36mExpired\033[0m"
+else
+Exp=$(curl -sS https://raw.githubusercontent.com/pusoxx/permission/main/ipmini | grep $MYIP | awk '{print $3}')
+fi
+
+BIBlack='\033[1;90m'      # Black
+BIRed='\033[1;91m'        # Red
+BIGreen='\033[1;92m'      # Green
+BIYellow='\033[1;93m'     # Yellow
+BIBlue='\033[1;94m'       # Blue
+BIPurple='\033[1;95m'     # Purple
+BICyan='\033[1;96m'       # Cyan
+BIWhite='\033[1;97m'      # White
+UWhite='\033[4;37m'       # White
+On_IPurple='\033[0;105m'  #
+On_IRed='\033[0;101m'
+IBlack='\033[0;90m'       # Black
+IRed='\033[0;91m'         # Red
+IGreen='\033[0;92m'       # Green
+IYellow='\033[0;93m'      # Yellow
+IBlue='\033[0;94m'        # Blue
+IPurple='\033[0;95m'      # Purple
+ICyan='\033[0;96m'        # Cyan
+IWhite='\033[0;97m'       # White
+NC='\e[0m'
+#Download/Upload today
+dtoday="$(vnstat -i eth0 | grep "today" | awk '{print $2" "substr ($3, 1, 1)}')"
+utoday="$(vnstat -i eth0 | grep "today" | awk '{print $5" "substr ($6, 1, 1)}')"
+ttoday="$(vnstat -i eth0 | grep "today" | awk '{print $8" "substr ($9, 1, 1)}')"
+#Download/Upload yesterday
+dyest="$(vnstat -i eth0 | grep "yesterday" | awk '{print $2" "substr ($3, 1, 1)}')"
+uyest="$(vnstat -i eth0 | grep "yesterday" | awk '{print $5" "substr ($6, 1, 1)}')"
+tyest="$(vnstat -i eth0 | grep "yesterday" | awk '{print $8" "substr ($9, 1, 1)}')"
+#Download/Upload current month
+dmon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $3" "substr ($4, 1, 1)}')"
+umon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $6" "substr ($7, 1, 1)}')"
+tmon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $9" "substr ($10, 1, 1)}')"
+clear
+
+# // Exporting Language to UTF-8
+
+export LANG='en_US.UTF-8'
+export LANGUAGE='en_US.UTF-8'
+
+
+# // Export Color & Information
+export RED='\033[0;31m'
+export GREEN='\033[0;32m'
+export YELLOW='\033[0;33m'
+export BLUE='\033[0;34m'
+export PURPLE='\033[0;35m'
+export CYAN='\033[0;36m'
+export LIGHT='\033[0;37m'
+export NC='\033[0m'
+
+###########- END COLOR CODE -##########
+tram=$( free -h | awk 'NR==2 {print $2}' )
+uram=$( free -h | awk 'NR==2 {print $3}' )
+ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
+CITY=$(curl -s ipinfo.io/city )
+
+# // Export Banner Status Information
+export EROR="[${RED} EROR ${NC}]"
+export INFO="[${YELLOW} INFO ${NC}]"
+export OKEY="[${GREEN} OKEY ${NC}]"
+export PENDING="[${YELLOW} PENDING ${NC}]"
+export SEND="[${YELLOW} SEND ${NC}]"
+export RECEIVE="[${YELLOW} RECEIVE ${NC}]"
+
+# // Export Align
+export BOLD="\e[1m"
+export WARNING="${RED}\e[5m"
+export UNDERLINE="\e[4m"
+
+# TOTAL RAM
+total_ram=` grep "MemTotal: " /proc/meminfo | awk '{ print $2}'`
+totalram=$(($total_ram/1024))
+
+persenmemori="$(echo "scale=2; $usmem*100/$tomem" | bc)"
+#persencpu=
+persencpu="$(echo "scale=2; $cpu1+$cpu2" | bc)"
+
+# // Clear
+clear
+clear && clear && clear
+clear;clear;clear
+cek=$(service ssh status | grep active | cut -d ' ' -f5)
+if [ "$cek" = "active" ]; then
+stat=-f5
+else
+stat=-f7
+fi
+ssh=$(service ssh status | grep active | cut -d ' ' $stat)
+if [ "$ssh" = "active" ]; then
+ressh="${green}ON${NC}"
+else
+ressh="${red}OFF${NC}"
+fi
+sshstunel=$(service stunnel4 status | grep active | cut -d ' ' $stat)
+if [ "$sshstunel" = "active" ]; then
+resst="${green}ON${NC}"
+else
+resst="${red}OFF${NC}"
+fi
+sshws=$(service ws-stunnel status | grep active | cut -d ' ' $stat)
+if [ "$sshws" = "active" ]; then
+ressshws="${green}ON${NC}"
+else
+ressshws="${red}OFF${NC}"
+fi
+ngx=$(service nginx status | grep active | cut -d ' ' $stat)
+if [ "$ngx" = "active" ]; then
+resngx="${green}ON${NC}"
+else
+resngx="${red}OFF${NC}"
+fi
+dbr=$(service dropbear status | grep active | cut -d ' ' $stat)
+if [ "$dbr" = "active" ]; then
+resdbr="${green}ON${NC}"
+else
+resdbr="${red}OFF${NC}"
+fi
+v2r=$(service xray status | grep active | cut -d ' ' $stat)
+if [ "$v2r" = "active" ]; then
+resv2r="${green}ON${NC}"
+else
+resv2r="${red}OFF${NC}"
+fi
+function addhost(){
+clear
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo ""
+read -rp "Domain/Host: " -e host
+echo ""
+if [ -z $host ]; then
+echo "????"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+read -n 1 -s -r -p "Press any key to back on menu"
+setting-menu
+else
+echo "IP=$host" > /var/lib/scrz-prem/ipvps.conf
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo "Dont forget to renew cert"
+echo ""
+read -n 1 -s -r -p "Press any key to back on menu"
+menu
+fi
+}
+function genssl(){
+clear
+systemctl stop nginx
+domain=$(cat /var/lib/scrz-prem/ipvps.conf | cut -d'=' -f2)
+Cek=$(lsof -i:80 | cut -d' ' -f1 | awk 'NR==2 {print $1}')
+if [[ ! -z "$Cek" ]]; then
+sleep 1
+echo -e "[ ${red}WARNING${NC} ] Detected port 80 used by $Cek " 
+systemctl stop $Cek
+sleep 2
+echo -e "[ ${green}INFO${NC} ] Processing to stop $Cek " 
+sleep 1
+fi
+echo -e "[ ${green}INFO${NC} ] Starting renew cert... " 
+sleep 2
+/root/.acme.sh/acme.sh --set-default-ca --server letsencrypt
+/root/.acme.sh/acme.sh --issue -d $domain --standalone -k ec-256
+~/.acme.sh/acme.sh --installcert -d $domain --fullchainpath /etc/xray/xray.crt --keypath /etc/xray/xray.key --ecc
+echo -e "[ ${green}INFO${NC} ] Renew cert done... " 
+sleep 2
+echo -e "[ ${green}INFO${NC} ] Starting service $Cek " 
+sleep 2
+echo $domain > /etc/xray/domain
+systemctl restart xray
+systemctl restart nginx
+echo -e "[ ${green}INFO${NC} ] All finished... " 
+sleep 0.5
+echo ""
+read -n 1 -s -r -p "Press any key to back on menu"
+menu
+}
+export sem=$( curl -s https://raw.githubusercontent.com/pusoxx/permission/main/versions)
+export pak=$( cat /home/.ver)
+IPVPS=$(curl -s ipinfo.io/ip )
+clear
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "\E[44;1;39m                     ⇱ INFORMASI VPS ⇲                        \E[0m"
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+
+echo -e "${BIGreen}□ Server Uptime       = ${BICyan}$( uptime -p  | cut -d " " -f 2-10000 ) ${NC}"
+echo -e "${BIGreen}□ Current Time        = ${BICyan}$( date -d "0 days" +"%d-%m-%Y | %X" )${NC}"
+echo -e "${BIGreen}□ Operating System    = ${BICyan}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' ) ( $( uname -m) )${NC}"
+echo -e "${BIGreen}□ Current Domain      = ${BICyan}$( cat /etc/xray/domain )${NC}"
+echo -e "${BIGreen}□ Jumlah Ram          = ${BICyan}${totalram}MB"
+echo -e "${BIGreen}□ Server Resource     = ${BICyan}$uram / $tram"
+echo -e "${BIGreen}□ Clients Name        = ${BICyan}$Name${NC}"
+echo -e "${BIGreen}□ Expired Script VPS  = ${BICyan}$Exp${NC}"
+echo -e "${BIGreen}□ AutoScript By Dev   = ${BICyan}WokszXD ${NC}"
+echo -e "${BIGreen}□ Kata Kata           = ${BICyan}SEMUA BUTUH PROSES!! ${NC}"
+
+echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
+echo -e "${BICyan} │                  ${BIWhite}${UWhite}WokszXD TUNELING${NC}"
+echo -e "${BICyan} │"
+echo -e " ${BICyan}│  ${BICyan}Use Core        :  ${BIPurple}SimpleScript${NC}"
+echo -e " ${BICyan}│  ${BICyan}IP-VPS          :  ${BIYellow}$IPVPS${NC}"
+echo -e " ${BICyan}│  ${BICyan}ISP-VPS         :  ${BIYellow}$ISP${NC}"  
+echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
+
+echo -e "${BIWhite}Jangan pernah menyesal akan semua yang kita awali${NC}"
+echo -e "${BIWhite}Tapi jalani saja apa yang telah terjadi.${NC}" 
+echo -e "${BIWhite}##WokszXD${NC}"
+
+echo -e "${GREEN}┌──────────────────────────────────────────────────┐${NC}" 
+echo -e "${GREEN}│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN $NC" 
+echo -e "${GREEN}│  \033[0m ${Blue} $ssh1        $vma           $vla          $tra $NC" 
+echo -e "${GREEN}└──────────────────────────────────────────────────┘${NC}" 
+  
+echo -e "     ${BICyan} SSH ${NC}: $ressh"" ${BICyan} NGINX ${NC}: $resngx"" ${BICyan}  XRAY ${NC}: $resv2r"" ${BICyan} TROJAN ${NC}: $resv2r"
+echo -e "   ${BICyan}     STUNNEL ${NC}: $resst" "${BICyan} DROPBEAR ${NC}: $resdbr" "${BICyan} SSH-WS ${NC}: $ressshws"
+echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
+echo -e "     ${BICyan}[${BIWhite}01${BICyan}] SSH       ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"    "     ${BICyan}[${BIWhite}06${BICyan}] TRIALL    ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "${BICyan} │"
+echo -e "     ${BICyan}[${BIWhite}02${BICyan}] VMESS     ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "     ${BICyan}[${BIWhite}07${BICyan}] BACKUP    ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "${BICyan} │"
+echo -e "     ${BICyan}[${BIWhite}03${BICyan}] VLESS     ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "     ${BICyan}[${BIWhite}08${BICyan}] ADD-HOST      ${NC}" "${BICyan}   │"
+echo -e "     ${BICyan}[${BIWhite}04${BICyan}] TROJAN    ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "     ${BICyan}[${BIWhite}09${BICyan}] RUNNING SERVICE   │"
+echo -e "     ${BICyan}[${BIWhite}05${BICyan}] SETTINGS  ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "     ${BICyan}[${BIWhite}10${BICyan}] SET REBOOT${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "${BICyan} │${NC}"
+echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
+
+echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
+echo -e "${BICyan} │$NC ${BICyan}HARI INI${NC}: ${red}$ttoday$NC ${BICyan}BULAN${NC}: ${red}$tmon$NC $NC"
+echo -e "${BICyan} └─────────────────────────────────────────────────────┘${NC}"
+DATE=$(date +'%d %B %Y')
+datediff() {
+    d1=$(date -d "$1" +%s)
+    d2=$(date -d "$2" +%s)
+    echo -e " $BICyan│${NC}   Expiry In      : $(( (d1 - d2) / 86400 )) Days $NC"
+}
+mai="datediff "$Exp" "$DATE""
+echo -e " $BICyan┌─────────────────────────────────────┐${NC}"
+echo -e " $BICyan│${NC}   Version        : $(cat /opt/.ver) 4.0 Lite ${NC}"
+echo -e " $BICyan│${NC}   Client         :\033[1;36m $Name \e[0m"
+echo -e " $BICyan│${NC}   Order By       : ${BIRed}WokszXD VPN${NC}"
+if [ $exp \< 1000 ];
+then
+echo -e "   $BICyan│$NC License      : ${GREEN}$sisa_hari$NC Days Tersisa $NC"
+else
+    datediff "$Exp" "$DATE"
+fi;
+echo -e " $BICyan└─────────────────────────────────────┘${NC}"
+echo
+read -p " Select menu : " opt
+echo -e ""
+case $opt in
+1) clear ; menu-ssh ;;
+2) clear ; menu-vmess ;;
+3) clear ; menu-vless ;;
+4) clear ; menu-trojan ;;
+5) clear ; menu-set ;;
+6) clear ; menu-trial ;;
+7) clear ; menu-backup ;;
+8) clear ; addhost ;;
+9) clear ; running ;;
+10) clear ; jam ;;
+6969) clear ; wget https://raw.githubusercontent.com/pusoxx/Ver3/main/update.sh && chmod +x update.sh && ./update.sh && rm -f /root/update.sh ;;
+0) clear ; menu ;;
+x) exit ;;
+*) echo -e "" ; echo "Press any key to back exit" ; sleep 1 ; exit ;;
+esac
