@@ -253,19 +253,19 @@ echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━�
 echo -e "\E[42;1;93m                     ⇱ INFORMASI VPS ⇲                        \E[0m"
 echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
-echo -e " ${BIRed}❐ SYSTEM OS | CPU USE ${NC} : ${green}$MODEL | CPU USE $vcp%${NC}"
-echo -e " ${BIRed}❐ SERVER RAM | USAGE ${NC}  : ${green}$RAM MB  | RAM USE $rak MB${NC}"
-echo -e " ${BIRed}❐ SERVER UPTIME ${NC}       : ${green}$SERONLINE${NC}"
-echo -e " ${BIRed}❐ DATE & TIME ${NC}         : ${green}$DATEVPS | $TIMEZONE${NC}"
-echo -e " ${BIRed}❐ DOMAIN ${NC}              : ${green}$domain${NC}"
-echo -e " ${BIRed}❐ NS DOMAIN ${NC}           : ${green}$NS${NC}"
+echo -e " ${BIRed}❐ SYSTEM OS  ${NC}          : ${green}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' ) ( $( uname -m) )${NC}"
+echo -e " ${BIRed}❐ SERVER RAM  ${NC}         : ${green}${totalram}MB"
+echo -e " ${BIRed}❐ SERVER UPTIME ${NC}       : ${green}$( uptime -p  | cut -d " " -f 2-10000 ) ${NC}"
+echo -e " ${BIRed}❐ DATE & TIME ${NC}         :  ${green}$( date -d "0 days" +"%d-%m-%Y | %X" )${NC}"
+echo -e " ${BIRed}❐ DOMAIN ${NC}              : ${green}$( cat /etc/xray/domain )${NC}"
+echo -e " ${BIRed}❐ NS DOMAIN ${NC}           : ${green}$sldomain${NC}"
 echo -e " ${BIRed}❐ IP VPS ${NC}              : ${green}$IPVPS${NC}"
 echo -e " ${BIRed}❐ ISP VPS ${NC}             : ${green}$ISP${NC}"
 echo -e " ${BIRed}❐ CLIENTS NAME ${NC}        : ${green}$Name${NC}"
 
 echo -e "${BIGreen}┌────────────────────────────────────────────────────────────┐${NC}"
-echo -e "${BIGreen}│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN       SHADOWSOCKS$NC ${BIGreen} "
-echo -e "${BIGreen}│  \033[0m ${BIGreen} $ssh1       $vma           $vla          $trb              $ssa   $NC   ${BIGreen} "
+echo -e "${BIGreen}│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN$NC ${BIGreen} "
+echo -e "${BIGreen}│  \033[0m ${BIGreen} $ssh1       $vma           $vla          $tra$NC   ${BIGreen} "
 echo -e "${BIGreen}└────────────────────────────────────────────────────────────┘${NC}"
   
 echo -e "     ${BIGreen} SSH ${NC}: $ressh"" ${BIGreen} NGINX ${NC}: $resngx"" ${BIGreen}  XRAY ${NC}: $resv2r"" ${BIGreen} TROJAN ${NC}: $resv2r"
@@ -286,7 +286,7 @@ echo -e "   ${BIGreen}[${BIWhite}04${BIGreen}]${BIBlue} •${NC} ${BIYellow}TROJ
 echo -e "   ${BIGreen}[${BIWhite}05${BIGreen}]${BIBlue} •$NC ${BIYellow}SETTINGS MENU    $NC ${BIGreen}[${BIWhite}10${BIGreen}]${BIBlue} •$NC ${BIYellow}SET REBOOT   "
  echo -e "     ${BIGreen}[${BIWhite} X ${BIGreen}] TYPE X FOR EXIT                             "
 echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[42;1;93m                ⇱ WOKSZXD TUNNELING PROJECT ⇲                     \E[0m"
+echo -e "\E[42;1;93m                ⇱ WOKSZXD TUNNELING PROJECT ⇲                 \E[0m"
 echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 DATE=$(date +'%d %B %Y')
 datediff() {
