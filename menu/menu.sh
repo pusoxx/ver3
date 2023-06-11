@@ -249,69 +249,63 @@ export sem=$( curl -s https://raw.githubusercontent.com/pusoxx/permission/main/v
 export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m                     ⇱ INFORMASI VPS ⇲                        \E[0m"
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "\E[42;1;93m                     ⇱ INFORMASI VPS ⇲                        \E[0m"
+echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
-echo -e "${BIGreen}□ Server Uptime       = ${BICyan}$( uptime -p  | cut -d " " -f 2-10000 ) ${NC}"
-echo -e "${BIGreen}□ Current Time        = ${BICyan}$( date -d "0 days" +"%d-%m-%Y | %X" )${NC}"
-echo -e "${BIGreen}□ Operating System    = ${BICyan}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' ) ( $( uname -m) )${NC}"
-echo -e "${BIGreen}□ Current Domain      = ${BICyan}$( cat /etc/xray/domain )${NC}"
-echo -e "${BIGreen}□ Jumlah Ram          = ${BICyan}${totalram}MB"
-echo -e "${BIGreen}□ Server Resource     = ${BICyan}$uram / $tram"
-echo -e "${BIGreen}□ Clients Name        = ${BICyan}$Name${NC}"
-echo -e "${BIGreen}□ Expired Script VPS  = ${BICyan}$Exp${NC}"
-echo -e "${BIGreen}□ AutoScript By Dev   = ${BICyan}WokszXD ${NC}"
-echo -e "${BIGreen}□ Kata Kata           = ${BICyan}SEMUA BUTUH PROSES!! ${NC}"
+echo -e " ${BIRed}❐ SYSTEM OS | CPU USE ${NC} : ${green}$MODEL | CPU USE $vcp%${NC}"
+echo -e " ${BIRed}❐ SERVER RAM | USAGE ${NC}  : ${green}$RAM MB  | RAM USE $rak MB${NC}"
+echo -e " ${BIRed}❐ SERVER UPTIME ${NC}       : ${green}$SERONLINE${NC}"
+echo -e " ${BIRed}❐ DATE & TIME ${NC}         : ${green}$DATEVPS | $TIMEZONE${NC}"
+echo -e " ${BIRed}❐ DOMAIN ${NC}              : ${green}$domain${NC}"
+echo -e " ${BIRed}❐ NS DOMAIN ${NC}           : ${green}$NS${NC}"
+echo -e " ${BIRed}❐ IP VPS ${NC}              : ${green}$IPVPS${NC}"
+echo -e " ${BIRed}❐ ISP VPS ${NC}             : ${green}$ISP${NC}"
+echo -e " ${BIRed}❐ CLIENTS NAME ${NC}        : ${green}$Name${NC}"
 
-echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "${BICyan} │                  ${BIWhite}${UWhite}WokszXD TUNELING${NC}"
-echo -e "${BICyan} │"
-echo -e " ${BICyan}│  ${BICyan}Use Core        :  ${BIPurple}SimpleScript${NC}"
-echo -e " ${BICyan}│  ${BICyan}IP-VPS          :  ${BIYellow}$IPVPS${NC}"
-echo -e " ${BICyan}│  ${BICyan}ISP-VPS         :  ${BIYellow}$ISP${NC}"  
-echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
-
-echo -e "${BIWhite}Jangan pernah menyesal akan semua yang kita awali${NC}"
-echo -e "${BIWhite}Tapi jalani saja apa yang telah terjadi.${NC}" 
-echo -e "${BIWhite}##WokszXD${NC}"
-
-echo -e "${GREEN}┌──────────────────────────────────────────────────┐${NC}" 
-echo -e "${GREEN}│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN $NC" 
-echo -e "${GREEN}│  \033[0m ${Blue} $ssh1        $vma           $vla          $tra $NC" 
-echo -e "${GREEN}└──────────────────────────────────────────────────┘${NC}" 
+echo -e "${BIGreen}┌────────────────────────────────────────────────────────────┐${NC}"
+echo -e "${BIGreen}│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN       SHADOWSOCKS$NC ${BIGreen} "
+echo -e "${BIGreen}│  \033[0m ${BIGreen} $ssh1       $vma           $vla          $trb              $ssa   $NC   ${BIGreen} "
+echo -e "${BIGreen}└────────────────────────────────────────────────────────────┘${NC}"
   
-echo -e "     ${BICyan} SSH ${NC}: $ressh"" ${BICyan} NGINX ${NC}: $resngx"" ${BICyan}  XRAY ${NC}: $resv2r"" ${BICyan} TROJAN ${NC}: $resv2r"
-echo -e "   ${BICyan}     STUNNEL ${NC}: $resst" "${BICyan} DROPBEAR ${NC}: $resdbr" "${BICyan} SSH-WS ${NC}: $ressshws"
-echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "     ${BICyan}[${BIWhite}01${BICyan}] SSH       ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"    "     ${BICyan}[${BIWhite}06${BICyan}] TRIALL    ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "${BICyan} │"
-echo -e "     ${BICyan}[${BIWhite}02${BICyan}] VMESS     ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "     ${BICyan}[${BIWhite}07${BICyan}] BACKUP    ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "${BICyan} │"
-echo -e "     ${BICyan}[${BIWhite}03${BICyan}] VLESS     ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "     ${BICyan}[${BIWhite}08${BICyan}] ADD-HOST      ${NC}" "${BICyan}   │"
-echo -e "     ${BICyan}[${BIWhite}04${BICyan}] TROJAN    ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "     ${BICyan}[${BIWhite}09${BICyan}] RUNNING SERVICE   │"
-echo -e "     ${BICyan}[${BIWhite}05${BICyan}] SETTINGS  ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "     ${BICyan}[${BIWhite}10${BICyan}] SET REBOOT${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "${BICyan} │${NC}"
-echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
-
-echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "${BICyan} │$NC ${BICyan}HARI INI${NC}: ${red}$ttoday$NC ${BICyan}BULAN${NC}: ${red}$tmon$NC $NC"
-echo -e "${BICyan} └─────────────────────────────────────────────────────┘${NC}"
+echo -e "     ${BIGreen} SSH ${NC}: $ressh"" ${BIGreen} NGINX ${NC}: $resngx"" ${BIGreen}  XRAY ${NC}: $resv2r"" ${BIGreen} TROJAN ${NC}: $resv2r"
+echo -e "   ${BIGreen}     STUNNEL ${NC}: $resst" "${BIGreen} DROPBEAR ${NC}: $resdbr" "${BIGreen} SSH-WS ${NC}: $ressshws"
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}" | lolcat
+echo -e "          ${WB}༶ ━━━━━ [ Bandwidth Monitoring ] ━━━━━ ༶   ${NC}" | lolcat
+echo -e ""
+echo -e "\033[0m  ${WB}Today ($DATE)                      Monthly ($(date +%B/%Y))${NC}  "
+echo -e "\033[0m  ↓↓ Total: ${BIRed}$ttoday${NC}                    ↓↓ Total: $tmon${NC}   "
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}" | lolcat
+echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "\E[42;1;93m                     ⇱ MENU SERVICE ⇲                         \E[0m"
+echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "   ${BIGreen}[${BIWhite}01${BIGreen}]${BIBlue} •${NC} ${BIYellow}SSH MENU        $NC  ${BIGreen}[${BIWhite}06${BIGreen}]${BIBlue} •$NC ${BIYellow}TRIALL MENU  " 
+echo -e "   ${BIGreen}[${BIWhite}02${BIGreen}]${BIBlue} •${NC} ${BIYellow}VMESS MENU      $NC  ${BIGreen}[${BIWhite}07${BIGreen}]${BIBlue} •$NC ${BIYellow}BACKUP MENU    "
+echo -e "   ${BIGreen}[${BIWhite}03${BIGreen}]${BIBlue} •${NC} ${BIYellow}VLESS MENU      $NC  ${BIGreen}[${BIWhite}08${BIGreen}]${BIBlue} •$NC ${BIYellow}ADD-HOST      "
+echo -e "   ${BIGreen}[${BIWhite}04${BIGreen}]${BIBlue} •${NC} ${BIYellow}TROJAN MENU     $NC  ${BIGreen}[${BIWhite}09${BIGreen}]${BIBlue} •$NC ${BIYellow}RUNNING SERVICE "
+echo -e "   ${BIGreen}[${BIWhite}05${BIGreen}]${BIBlue} •$NC ${BIYellow}SETTINGS MENU    $NC ${BIGreen}[${BIWhite}10${BIGreen}]${BIBlue} •$NC ${BIYellow}SET REBOOT   "
+ echo -e "     ${BIGreen}[${BIWhite} X ${BIGreen}] TYPE X FOR EXIT                             "
+echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "\E[42;1;93m                ⇱ WOKSZXD TUNNELING PROJECT ⇲                     \E[0m"
+echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 DATE=$(date +'%d %B %Y')
 datediff() {
     d1=$(date -d "$1" +%s)
     d2=$(date -d "$2" +%s)
-    echo -e " $BICyan│${NC}   Expiry In      : $(( (d1 - d2) / 86400 )) Days $NC"
+    echo -e " $BIYellow│${NC}   Expiry In      : $(( (d1 - d2) / 86400 )) Days $NC"
 }
 mai="datediff "$Exp" "$DATE""
-echo -e " $BICyan┌─────────────────────────────────────┐${NC}"
-echo -e " $BICyan│${NC}   Version        : $(cat /opt/.ver) 4.0 Lite ${NC}"
-echo -e " $BICyan│${NC}   Client         :\033[1;36m $Name \e[0m"
-echo -e " $BICyan│${NC}   Order By       : ${BIRed}WokszXD VPN${NC}"
+echo -e " $BIYellow┌─────────────────────────────────────┐${NC}"
+echo -e " $BIYellow│${NC}   Version        : $(cat /opt/.ver) 4.0 Lite ${NC}"
+echo -e " $BIYellow│${NC}   Client         :\033[1;36m $Name \e[0m"
+echo -e " $BIYellow│${NC}   Order By       : ${BIBlue}WokszXD VPN${NC}"
 if [ $exp \< 1000 ];
 then
-echo -e "   $BICyan│$NC License      : ${GREEN}$sisa_hari$NC Days Tersisa $NC"
+echo -e "   $BIYellow│$NC License      : ${GREEN}$sisa_hari$NC Days Tersisa $NC"
 else
     datediff "$Exp" "$DATE"
 fi;
-echo -e " $BICyan└─────────────────────────────────────┘${NC}"
+echo -e " $BIYellow└─────────────────────────────────────┘${NC}"
 echo
 read -p " Select menu : " opt
 echo -e ""
