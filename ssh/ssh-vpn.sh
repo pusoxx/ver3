@@ -279,7 +279,7 @@ wget -O running "https://raw.githubusercontent.com/artanodrop/v4/main/menu/runni
 wget -O clearcache "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/clearcache.sh"
 wget -O menu-trgo "https://raw.githubusercontent.com/artanodrop/v4/main/menu/menu-trgo.sh"
 wget -O menu-trojan "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/menu-trojan.sh"
-wget -O fix "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/cf.sh"
+wget -O cf "https://raw.githubusercontent.com/pusoxx/ver3/main/cf.sh"
 
 # menu ssh ovpn
 wget -O menu-ssh "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/menu-ssh.sh"
@@ -313,7 +313,7 @@ wget -O port-ovpn "https://raw.githubusercontent.com/artanodrop/v4/main/port/por
 
 
 wget -O xp "https://raw.githubusercontent.com/artanodrop/v4/main/ssh/xp.sh"
-wget -O acs-set "https://raw.githubusercontent.com/artanodrop/v4/main/acs-set.sh"
+wget -O acs-set "https://raw.githubusercontent.com/pusoxx/ver3/main/acs-set.sh"
 
 wget -O sshws "https://raw.githubusercontent.com/artanodrop/v4/main/ssh/sshws.sh"
 wget -O status "https://raw.githubusercontent.com/artanodrop/v4/main/status.sh"
@@ -322,7 +322,7 @@ wget -O backup "https://raw.githubusercontent.com/pusoxx/ver3/main/backup/backup
 wget -O restore "https://raw.githubusercontent.com/pusoxx/ver3/main/backup/restore.sh"
 
 wget -O jam "https://raw.githubusercontent.com/artanodrop/v4/main/jam.sh"
-
+wget -O up "https://raw.githubusercontent.com/pusoxx/ver3/main/up.sh"
 chmod +x menu
 chmod +x menu-trial
 chmod +x menu-vmess
@@ -331,7 +331,8 @@ chmod +x running
 chmod +x clearcache
 chmod +x menu-trgo
 chmod +x menu-trojan
-chmod +x fix
+chmod +x cf
+chmod +x up
 
 chmod +x menu-ssh
 chmod +x usernew
