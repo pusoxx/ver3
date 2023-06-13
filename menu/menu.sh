@@ -255,7 +255,7 @@ echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━�
 
 echo -e " ${BIRed}❐ SYSTEM OS  ${NC}          : ${green}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' ) ( $( uname -m) )${NC}"
 echo -e " ${BIRed}❐ SERVER RAM  ${NC}         : ${green}${totalram}MB"
-echo -e " ${BIRed}❐ RAM USAGE  ${NC}          : ${green}$USAGERAM MB${NC}"
+echo -e " ${BIRed}❐ RAM USAGE  ${NC}          : ${green}$RAMUSAGE MB${NC}"
 echo -e " ${BIRed}❐ SERVER UPTIME ${NC}       : ${green}$( uptime -p  | cut -d " " -f 2-10000 ) ${NC}"
 echo -e " ${BIRed}❐ DATE & TIME ${NC}         : ${green}$( date -d "0 days" +"%d-%m-%Y | %X" )${NC}"
 echo -e " ${BIRed}❐ DOMAIN ${NC}              : ${green}$( cat /etc/xray/domain )${NC}"
