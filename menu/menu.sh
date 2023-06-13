@@ -258,7 +258,6 @@ echo -e " ${BIRed}❐ SERVER RAM  ${NC}         : ${green}${totalram}MB"
 echo -e " ${BIRed}❐ SERVER UPTIME ${NC}       : ${green}$( uptime -p  | cut -d " " -f 2-10000 ) ${NC}"
 echo -e " ${BIRed}❐ DATE & TIME ${NC}         :  ${green}$( date -d "0 days" +"%d-%m-%Y | %X" )${NC}"
 echo -e " ${BIRed}❐ DOMAIN ${NC}              : ${green}$( cat /etc/xray/domain )${NC}"
-echo -e " ${BIRed}❐ NS DOMAIN ${NC}           : ${green}$sldomain${NC}"
 echo -e " ${BIRed}❐ IP VPS ${NC}              : ${green}$IPVPS${NC}"
 echo -e " ${BIRed}❐ ISP VPS ${NC}             : ${green}$ISP${NC}"
 echo -e " ${BIRed}❐ CLIENTS NAME ${NC}        : ${green}$Name${NC}"
@@ -288,6 +287,14 @@ echo -e "   ${BIGreen}[${BIWhite}05${BIGreen}]${BIBlue} •$NC ${BIYellow}SETTIN
 echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[42;1;93m                ⇱ WOKSZXD TUNNELING PROJECT ⇲                 \E[0m"
 echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "${BIYellow}                  MENU TAMBAHAN${NC} "
+echo -e "${BIGreen} ┌─────────────────────────────────────────────────────┐${NC}"
+echo -e "     ${BIGreen}[${BIWhite}11${BIGreen}]${BIBlue} •${NC} ${BIYellow} DOMAIN FREE${NC} "
+echo -e "     ${BIGreen}[${BIWhite}12${BIGreen}]${BIBlue} •${NC} ${BIYellow} UPDATE MENU${NC} "
+echo -e "     ${BIGreen}[${BIWhite}13${BIGreen}]${BIBlue} •${NC} ${BIYellow} INSTAL UDP${NC} "
+echo -e "     ${BIGreen}[${BIWhite}14${BIGreen}]${BIBlue} •${NC} ${BIYellow} GANTI NS DOMAIN${NC} "
+echo -e "     ${BIGreen}[${BIWhite}99${BIGreen}]${BIBlue} •${NC} ${BIYellow} CLEAR SAMPAH${NC} "
+echo -e "${BIGreen} └─────────────────────────────────────────────────────┘${NC}"
 DATE=$(date +'%d %B %Y')
 datediff() {
     d1=$(date -d "$1" +%s)
@@ -320,6 +327,11 @@ case $opt in
 8) clear ; addhost ;;
 9) clear ; running ;;
 10) clear ; jam ;;
+11) clear ; cf ;;
+12) clear ; up ;;
+13) clear ; instal-udp ;;
+14) clear ; slow ;;
+99) clear ; clearcache ;;
 6969) clear ; wget https://raw.githubusercontent.com/pusoxx/Ver3/main/update.sh && chmod +x update.sh && ./update.sh && rm -f /root/update.sh ;;
 0) clear ; menu ;;
 x) exit ;;
