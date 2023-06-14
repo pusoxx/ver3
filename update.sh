@@ -2,7 +2,7 @@
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 ###########- COLOR CODE -##############
-REPO="https://raw.githubusercontent.com/pusoxx/abc/main/"
+REPO="https://raw.githubusercontent.com/pusoxx/ver3/main/"
 CYAN='\033[0;96m'        # Cyan
 
 BG="\E[44;1;39m"
