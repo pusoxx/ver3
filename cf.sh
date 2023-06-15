@@ -8,7 +8,7 @@ sub=$(</dev/urandom tr -dc a-z | head -c4)
 DOMAIN=wokszstore.com
 SUB_DOMAIN=${sub}.wokszstore.com
 CF_ID=ahdanfullset@gmail.com
-CF_KEY=f7fa85e2472592639b7d1cf82f1c5490ec1cd
+CF_KEY=236cfc0307a41ec0c88016fb2ba2a3a32c27f
 set -euo pipefail
 IP=$(curl -sS ifconfig.me);
 echo "Updating DNS for ${SUB_DOMAIN}..."
