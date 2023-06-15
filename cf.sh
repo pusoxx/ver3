@@ -5,9 +5,9 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 clear
 apt install jq curl -y
 sub=$(</dev/urandom tr -dc a-z | head -c4)
-DOMAIN=remoot.my.id
-SUB_DOMAIN=${sub}.remoot.my.id
-CF_ID=arismar.amar@gmail.com
+DOMAIN=wokszstore.com
+SUB_DOMAIN=${sub}.wokszstore.com
+CF_ID=ahdanfullset@gmail.com
 CF_KEY=f7fa85e2472592639b7d1cf82f1c5490ec1cd
 set -euo pipefail
 IP=$(curl -sS ifconfig.me);
