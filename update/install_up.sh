@@ -35,7 +35,7 @@ wget -q -O /usr/bin/renew-ws "https://raw.githubusercontent.com/artanodrop/v4/ma
 wget -q -O /usr/bin/del-ws "https://raw.githubusercontent.com/artanodrop/v4/main/xray/del-ws.sh" && chmod +x /usr/bin/del-ws
 wget -q -O /usr/bin/xp "https://raw.githubusercontent.com/artanodrop/v4/main/ssh/xp.sh" && chmod +x /usr/bin/xp
 wget -q -O /usr/bin/autokill "https://raw.githubusercontent.com/artanodrop/v4/main/ssh/autokill.sh" && chmod +x /usr/bin/autokill
-wget -q -O /usr/bin/add-host "https://raw.githubusercontent.com/artanodrop/v4/main/ssh/add-host.sh" && chmod +x /usr/bin/add-host
+wget -q -O /usr/bin/add-host "https://raw.githubusercontent.com/pusoxx/ver3/main/ssh/add-host.sh" && chmod +x /usr/bin/add-host
 wget https://raw.githubusercontent.com/pusoxx/ver3/main/backup/set-br.sh &&  chmod +x set-br.sh && ./set-br.sh
 echo -e " [INFO] Update Successfully"
 sleep 2
