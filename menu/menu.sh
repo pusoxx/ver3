@@ -327,7 +327,7 @@ case $opt in
 5) clear ; menu-set ;;
 6) clear ; menu-trial ;;
 7) clear ; menu-backup ;;
-8) clear ; addhost ;;
+8) clear ; add-host ;;
 9) clear ; running ;;
 10) clear ; jam ;;
 11) clear ; cf ;;
