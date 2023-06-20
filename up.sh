@@ -84,7 +84,7 @@ wget -O tendang "https://raw.githubusercontent.com/artanodrop/v4/main/ssh/tendan
 # menu system
 wget -O menu-set "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/menu-set.sh"
 wget -O menu-domain "https://raw.githubusercontent.com/artanodrop/v4/main/menu/menu-domain.sh"
-wget -O add-host "https://raw.githubusercontent.com/artanodrop/v4/main/ssh/add-host.sh"
+wget -O add-host "https://raw.githubusercontent.com/pusoxx/ver3/main/ssh/add-host.sh"
 wget -O port-change "https://raw.githubusercontent.com/artanodrop/v4/main/port/port-change.sh"
 wget -O certv2ray "https://raw.githubusercontent.com/artanodrop/v4/main/xray/certv2ray.sh"
 wget -O menu-webmin "https://raw.githubusercontent.com/artanodrop/v4/main/menu/menu-webmin.sh"
