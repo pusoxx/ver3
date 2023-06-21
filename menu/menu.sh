@@ -1,4 +1,342 @@
-#!/bin/bash
+#!/bin/bash 
+ # ========================================= 
+ vlx=$(grep -c -E "^#& " "/etc/xray/config.json") 
+ let vla=$vlx/2 
+ vmc=$(grep -c -E "^### " "/etc/xray/config.json") 
+ let vma=$vmc/2 
+ ssh1="$(awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd | wc -l)" 
+  
+ trx=$(grep -c -E "^#! " "/etc/xray/config.json") 
+ let tra=$trx/2 
+ ssx=$(grep -c -E "^## " "/etc/xray/config.json") 
+ let ssa=$ssx/2 
+ COLOR1='\033[0;35m' 
+ COLOR2='\033[0;39m' 
+ clear
 
-Ytta="WokszXD";krF=FoL;Gnr=Vl;QIy=Is;UOt=FC;kVE=Sk;KlM=gM;Xwe=TF;oTX=dD;Yox=Qa;wQx=mb;Kqb=Zy;xWU=twB;gTp=auw;hwZ=Ejp;tHg=iQZ;ojo=shb;jhw=FjF;IDL=klV;wOA=yFT;PZL=XfL;DRJ=DiE;bmJ=FCa;XGN=dOT;QCK=dkY;SOb=WJE;RJx=uAv;czJ=dts;VGB=oCy;TyO=xGj;yHU=bpq;Nfb=Wct;doQ=Ibf;XCL=rax;ZNH=Hhf;Eoh=yCU;ghd=hut;ooz=VKY;qMf=PrY;Ecf=Lke;BbJ=jie;QOI=lOT;oi=QkU;yM=iDO;rT=twI;wa=BEk;Lf=SGl;Sx=Kri;yL=RiF;Xf=iZT;iv=fpC;fW=nki;qX=FrL;ba=OUY;czP=Hdm;ecN=WKt;QMW=BnB;Nsq=jdC;nof=OZt;bhx=qNV;vVN=xaU;smp=Wta;ceY=GDh;AIB=juO;miA=Cso;zgz=Hka;Kea=YMq;hUp=SWY;zMP=ozk;WGK=JEt;pkF=jjF;FCq=pFs;ZrQ=VcQ;ZjS=do;BTP=Su;sly=xM;aZl=vF;iJn=bo;QCl=HB;SCO=xo;fUq=Jo;Epq=zc;wxq=Ev;ziJ=Gx;Kzo=JF;PDO=pJ;qhq=yp;OYk=rj;OGy=Cc;hSK=xR;lnD=um;UXi=pl;xBF=xP;qOD=iX;RVy=nl;mqe=JK;rQt=CA;qJD=FR;sPp=XZ;moh=DC;Fsj=GWh;NTx=Jnx;dwG=ncr;Ugd=mFV;ZTt=WjI;mFG=lms;YGK=bPI;UKs=ibv;hka=JFE;zpQ=Gxt;VlF=Jxk;AEJ=cuk;SUZ=YiV;Wfq=NhZ;xLp=ray;QmE=mqM;fkp=tHl;Sek=XvT;qbj=EKu;RfA=xSe;fPQ=Oll;cif=jtg;GYE=yei;Prw=RTD;sMB=pEL;sxA=APb;aRs=HgZ;SXm=VSI;lZA=UKc;YMw=Lct;bwO=XQI;OxQ=COX;bPh=KqP;GVr=hRx;eoA=eID;AZK=fFj;PGC=XPy;ieV=gly;AUO=yit;GjW=jaZ;tBB=HSO;vdV=efl;HiW=VHx;JaQ=RCo;cGr=fsk;eib=jty;TPK=rlb;dhM=oDt;tCL=muK;gAg=xQq;xWl=eMt;AtB=mbQ;UzS=lee;xjU=CPZ;qLS=iIg;dQw=NHN;Dum=qAc;aei=Whw;afz=OcR;NWZ=Txs;gzI=HsZ;YmH=IIm;kZc=Ppd;qnZ=vjw;sQw=BmF;PAB=rGe;gah=aHu;XfD=uJJ;LmJ=PUK;jCz=XpN;gTg=hRF;cpS=fhx;wFI=fih;pHM=aTH;GIm=Jtb;XDy=XGY;zMs=kPd;VtP=pbP;ALj=acU;HEZ=Tre;EPr=vOf;eSC=AIk;TXH=szR;nNa=bGD;lQt=Qod;Qvm=HGI;tkS=IOY;qmZ=tDf;xxx=xOS;pFg=XCd;aVR=xGh;ooR=AHX;JVj=laY;TvM=kEx;SYU=hol;ddj=khS;aPP=oiI;Edo="
-";DSi=WYX;LHA=Gfx;VgU=gJZ;Rxh=xYy;bXG=gvs;eLoP="e";u18="6";Yt="l";Yxgs="";qwt="Fu";ieC=HO;XcH=Rv;Ugs=LC;vD=xp;fy=oW;Zl=LhH;oP=Jm;sDA=kpY;GHn=TB;wzk=Da;oiO=Ei;NaM=hIf;fC=vjz;kT=rz;sV=bZz;CL=ARL;Wc=dA;gZG=tGI;vpk=cM;Aao=tgy;sU=ld;LZ=Pr;BE=wCX;iN=fQ;RCe=Dm;Rc=Fl;Njo=OMq;gtb=SKa;Wf=jMB;Dm=wHr;Nx=Wn;ANT=jAK;oFy=Bnc;IjZ=Xj;DQa=oK;ewZ=Vm;QPf=lz;Cwg=aS;KEM=jS;fkE=hM;nLw=ym;FWv=BC;aDC=Lw;tW=Rgn;kw=Hgf;tQ=eSh;Fi=iGb;Or=snM;ZG=xqx;xC=WJr;Bf=haC;pT=THr;By=jbu;tm=Hcy;eT=nTC;UT=KCa;dk=Pxy;vG=TvX;HX=MMB;Ow=ZoT;UJ=LvE;rx=oMF;EB=VZx;OC=IfU;dv=lTx;Nk=TNq;Ej=bKu;dl=ZZi;yzL=bJ;EiG=LJ;iqg=gK;fbd=vg;OPl=Ei;tnI=YS;yBV=DA;yxh=Ks;Nic=Ih;wMq=tD;iDs=AQ;Nhh=zy;JWe=Ry;gC=AnI;qWN=uq;hIc=OAL;UOm=Nq;Xj=ax;GW=utn;Fmc=CaI;zeK=eT;hI=sl;Ae=RK;XV=doy;Dpq=Eg;Mmr=MZg;CXd=Bao;RND=WUC;CGm=SRK;DJh=LZw;ym=Ah;xzv=IX;FYi=YUX;v6T=" ";RzE="gQnblxWaz1SLgUmc1NWZz5Wat0CI21CIsJXdjhCJ9IXZ2JXZT12byZUZ0FGZKg2chJ2LulmYvEyI goTZ0FGRgwzLzdCIl1CIkV2cgwHIlRXYEBCclJ3ZgwHIxYiPyAyLt92YuUGbn92bn9yL6MHc0RHa jMyIjMyIjoAYiIXZ2JXZT12byZUZ0FGZkICIk1CIiQWJt0WJtkVJisCIlRXYkBWPppWaipQKn8yL iVHa0l2ZucXYy9yL6MHc0RHai0zTQVkUKMyIjMyIjMyIjMyIjMyItASRE90QgI1TM90Qg0yIjMyI gACIgAyJtZTO7AzWzMDMcdSPOFUWDpgIv4Wah12LzIXZ29Ce492c1B3Lt92YuQnblRnbvNmclNXd 95UQZN0ekICIl1CIvh2YlpgCi0GMbVEXi0zQOpgCi0WOzsTM7QDNbVEXi0zRCpgCuFWeDByIgACI BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4 ws1MzADXBSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4 gwDP8ACUJJ1QTBSRUFERQVFIJNVQNJ1TG5USg4jP+ASfHJ0ekACIiASZtAyboNWZKogI9NkT7RSb BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp495UQZN0ekICIl1CIvh2YlpgCi03QOtHJ BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4 gQGZBBiPiCo4gACIgACIiASZtAyboNWZKogI9NkT7RSbws1MzADXBSp4BSp4BSp4BSp4BSp4BSp4 gAFRVBCbsFGdz5WSg4joAKOIgACIiASZtAyboNWZKoAdhNGbvxGI8BiIiCo48AiclZnclNFIQRUV 0BXayN2UgcWdCBCepZEI+IKgiDCIgACIgICIl1CIvh2YlpgC0F2Ys9GbgwHIiIKgizDIyVmdyV2U izDIEhlezt2bXBEI5JEI0BXayN2Ug4joAKOIgACIgICIl1CIvh2YlpgC0F2Ys9GbgwHIiIKgizDI BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp495UQZN0ekICIl1CIvh2YlpgC0F2Ys9GbgwHIiIKg BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4 +ASfHJ0ekACIiASZtAyboNWZKogI9NkT7RSbws1MzADXBSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4 iHIliHIli3nTBl1Q7RiIgUWLg8GajVmCKAiI9NkT7RCI8wDPgQEW6N3avdFIPRFITtkTBhEVg4jP iHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIl i03QOtHJtBzWzMDMcFIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIl wVWZsNnCiUGbpZEIlRXYkBXVgcmbpRWYvxmb39GRg01TG5USbBiIgUWLg8GajVmCzACclVGbzpgC 99EUFJ1ekICIwlmeuIXZ0NXYt1SduVWbvAXb09CIP1CI0V2Z3pQduVWbvAXb09CImJXLg0mcKIDI gACIgoQduVWbvAXb09CIylGZr1GIgACIKEjJ+IDIsxWdu9idlR2L+AiIwlmeuUnbl12LnlmZu92Y goQMm4jMgwGb152L2VGZv4DIvUnbl12Lw1Gdv8WLgAXa65iclR3ch1WL15WZt9CctR3LgASZgo3N jVmCK8ibpJ2cvI3c19CIq8SduVWbvAXb09CI21GIgACIKoyL15WZt9CctR3Lgg3KgQ2bth2YgACI pR2atpAazN3LjRXZvACctAicpR2atpgIzV2YjV3UgUnbl1EIlRXYkBXVg01TG5USbBiIgUWLg8Ga w1CIylGZr1mCyR3LjRXZvACctAicpR2atpwcsZ3LjRXZvACctAicpR2atpAetZ3LjRXZvACctAic kF2bs1SLgQXZndnCiAFRVBCSTNFIn5WasxWY0NnbJBSXPZkTJtFIiASZtAyboNWZKM3cvMGdl9CI whXZ/MWdv02bj5SZsd2bvdmLzN2bk9yL6MHc0RHaiACd4RnLzVWar92bj9CctR3LgMXZpt2bvNWL j9CctR3LgMXZpt2bvNWLlZXYz1SLgQXZpVXct0CI0V2Z3hCJ90mcpZmbvNmJkF2bs52dvRWP0J3b gUGdhNWamlGdyV2Yts2Ylh2Yt8mbt0CIzVWar92bj1ibvl2czV2ctAXZltWLtACd4RnLzVWar92b m9ld1ITRJNzUx0DZpZCZh9Gbud3bk1Ddy9Gc4V2PjV3Lt92YuUGbn92bn5ycj9GZv8iOzBHd0h2J 50CMbhSPtJXam52bjpiLvM3Jg4mctACZlNHI8BSLP1CInIzaEhERuVnTNJ0UCZka15Gbzx0QmVVe rRESE5WdO1kQTJkRqVnbsNHTDZWV5Z2X2VjMFl0MTFTPklmJpcCcv4GXxw1Lq4SKr01X61SYa1SQ gg3KgQ2bth2YgYiJgQHe05ycll2av92YvAXb09CImJXLg0mcgYiJgAHZ11CbsFGdz5Wag8ULgIiM lJnCyACclVGbzpAaz5SZ0FGZwVHImJXLg0mcKoAckVXLsxWY0Nnbp9iLgYiJgAHZ11CbsFGdz5Wa lpQduVWbKISduVWbg42bgs2YhJGIvRHIdBiclRnbFByWgM3clJHUiACctAictAyctASMg4WLgQWY ==gC0lGe";Mll="ch";HTv=Yyu;cbY=cId;FwM=nUK;Neo=URi;Jrd=ZsO;ZzZ=gsI;AGg=Krt;KoC=Usx;ftb=Vzm;kuT=EVS;AUX=NGv;Aow=suL;uBc=hlq;OqT=ApZ;kSe=ZTL;aFt=FKz;yqF=lEj;ZII=uml;BwC=JPx;gWH=eyv;wWA=hWw;unn=Brn;hxs=DiR;nPo=iOr;Uuo=lUG;zxW=Nkd;MAi=aWZ;XcA=xIq;sZL=MLV;rwV=lNF;GYU=UPS;WeS=kTk;Aym=btt;rGW=IDI;Uhx=DhE;Kut=fsH;eGn=UyX;VNh=YtK;QWo=gEO;Byf=nvi;Ezb=oBV;uWP=JEl;Vsp=Lgc;EAF=Byk;PSz=HCg;pyP=bQL;Uxq=ehM;WdA=Uij;pWM=bsv;oXm=BKe;mtM=qkr;XEB=pua;XzD=SPa;Kng=JSY;bFL=Zud;xbc=GSY;neu=TQJ;Ttj=EdI;ZCG=HXS;NSP=aRL;UPz=CwR;edR=xrL;jQC=PQv;ESa=fXd;eKc=KZo;WEy=DoO;fQg=tcd;FCk=GMk;YgE=Nzd;FAs=AFH;gRJ=wZL;ffM=Jsb;Ixf=RQY;Gmk=ugg;GRa=CTs;UiO=Yer;etb=mgM;fex=MqF;Nll=vPC;KWd=yXb;Muu=Mzy;wHZ=jjp;SmF=EZc;ZqQ=lNR;CuE=Afy;weE=KKV;ggU=fdX;wbE=YVE;TEj=yAz;and=qKr;MVm=jME;jUo=PRn;lUm=BLo;IUT=oDE;BDY=lkB;oQp=FKc;YEa=bpY;qOb=Izx;MfR=ODo;JmY=Kia;weH=FVf;URv=vSO;Jdp=BJH;opM=fhP;NUx=Qpe;iDY=ZNQ;lAj=vuK;imh=QaU;Cdp=mgw;wAJ=IMc;ANx=UQv;CkG=nsS;tuB=Lfj;KFb=ACa;Znn=SPN;Izy=AKY;MCI=uEV;Vas=kJi;OVF=xhN;ocJ=mis;CCq=zoG;Uun=Bsu;Vet=cPB;PMj=gXU;Svx=qVt;ado=LSJ;zGv=aIv;jyW=gEB;KLw=yan;nqU=foW;mPS=Zhi;oRH=HzR;aTq=iAA;LFG=yTk;LhE=dvZ;Gmd=aBt;lDM=FUf;KkS=LUv;ODo=ifH;LIW=oRx;kbu=cPC;WgK=RfX;NoQ=OpS;VWA=MwS;bPe=cOh;drL=JXi;tuj=aeR;nlI=RgR;qog=uHu;zLA=FCa;INo=pXp;PaQ=yJV;kPu=dmu;EgN=Wek;MXp=PIc;YEF=xAk;Zvz=EGN;Feh=yij;sv=TmN;Gc=WAR;kw=XRs;dT=fhJ;ed=WAu;rq=OFi;ak=auS;zU=gWJ;QB=PyR;Ci=HYT;DR=HGU;nEl=izK;Yon=JKg;aRR=osG;BLG=nGa;fad=iUJ;FeM=Oph;NIf=nUq;AdK=IHM;pMr=KRX;GJr=sor;Yzr=JJM;zCc=jhW;iac=Znx;lPF=qCm;GHi="o";Re="-";LcV=" ";H2o="t";O2h="r";r="ev";Gi="ba";x="s";sfT="d";x64="4";CTh=Vu;sh=dMK;Pl=GnF;MQ=HQe;dG=hZi;Tv=TuJ;BP=PPf;nh=Edv;pY=vGA;io=bPH;Rr=tdy;MF=jZJ;my=zmB;Yd=mtW;XA=kqf;VR=qss;BP=enZ;re=dnQ;os=Xua;kA=hzB;aE=JKy;vG=pcw;SO=gBc;FO=XMq;kK=ZHi;DwX=sS;mNb=im;nv=Cn;yNI=Hb;Yt=FQ;Pl=PU;ko=DJA;UX=tv;XD=UYM;uz=hIa;YVD=cJM;Zde=fi;IF=hLs;JCM=Dg;Fdw=JL;ieQ=FAu;ZMh=TQB;qHK=EM;wVK=bxY;nMR=mC;UL=Lep;wJ=eM;yc=dch;rIX=Vb;bBO=eT;Zpx=Iz;ang=Ln;AYe=Qy;UiQ=IU;usu=Xy;rkj=Ce;eVp=OY;aFw=wR;uNw=cJ;DQb=Tn;ZLx=ec;ipH=hk;pcK=rd;lCz=Ce;jxG=nx;Gkd=Pl;yFz=zk;vow=Qm;QBs=gz;dXe=sQ;dJU=vr;urX=mj;IF=qGI;UoJ=hD;x=$(eval $eLoP$Mll$GHi$v6T$Re$eLoP$v6T$RzE$v6T|$v6T$H2o$O2h$LcV"$LcV"$LcV"$Edo"$LcV|$v6T$O2h$r$v6T|$v6T$Gi$x$eLoP$u18$x64$v6T$Re$sfT);eval "$x";GMZ=snx;llB=diL;pxn=skL;Syg=GFT;RaJ=zXK;ZKL=BSQ;XCH=tmb;eyL=TOc;Ime=EZW;TFM=mN;tUA=Ab;fnp=ch;FNp=pJ;JRk=Az;YXw=hu;Qde=tk;zmI=lH;MdB=kG;cRe=zm;ygE=Og;MrN=Wn;Rwc=UL;KRw=NX;AmN=nu;lUf=HN;HVY=od;pqW=bz;hzm=tv;vAz=ql;fVA=KK;WXS=HX;PRd=CDX;lwM=wEt;ZcX=rAB;Yta=Syw;hvo=gTx;mtU=YbQ;Ilo=unK;Ava=XiM;mET=pHp;fFk=Pno;XBK=taz;dtp=zbA;bMu=zKL;FPC=PwO;xXA=dwc;Alj=ylC;JQq=JPx;MUH=FcT;cvl=azu;HPj=sSJ;dsl=XvS;Hoq=nKA;AZD=sfK;JFc=NZK;eEE=DrT;ZhW=fMr;VBT=enR;poD=hwH;lLU=qkd;yTa=OEZ;ZpV=WQP;Jeg=Mwj;YGH=HdD;mKz=pLU;PNn=ako;scF=rtk;QTH=sHP;Eto=FIR;BlM=WAX;UHF=WBV;Fud=mEb;sGh=Zzy;lPW=SOK;mcu=ZDf;QdD=YZM;HcF=LzS;GNn=Hyn;cql=ioJ;LKm=DNv;TAH=FaF;VYt=ERc;vhF=xvU;tNq=Uzi;JaE=bgV;bpG=opJ;CsA=UQX;pGD=TXG;AZk=bTy;bId=bNE;yql=fVT;Xcy=BmA;UHz=jRf;UNz=KZk;PXl=Vsy;Stv=Sed;cyB=zLX;gGz=JJP;IyT=xSZ;Zdj=nVJ;yQZ=vVc;sHL=Vfg;Zro=zth;XPf=sFS;nQQ=dnd;SNh=eWO;fOZ=Xjc;fgB=rQS;UjE=cpS;xYk=qWB;koB=ZFE;oQQ=hSL;ufm=zwQ;mzC=UfF;gQl=SLT;wwc=Jcb;tDN=SNI;ZFg=atH;UlF=ajb;DaK=zqX;KFL=uPP;mjy=zbB;ofO=nbM;vfl=vdB;SDM=yQQ;AfY=mzE;IHi=AeT;oVK=WsK;XhO=hRC;pOA=ScU;bCh=FOX;rgF=qzX;zyy=hXg;utq=MGT;Lkd=CTs;Vlb=XYZ;Ziu=aFC;dgF=qOn;Bpe=yss;Xoc=NXh;dGV=AjA;Zux=APj;diU=LZO;Vzp=lBl;xDW=otu;wxh=LmE;jsJ=xnu;AuO=OCw;iZA=dLf;pmj=lwe;RIo=tLO;TcY=glu;EVQ=Bxb;hkK=RTP;GcY=FoO;TDT=VhE;iZG=wyh;FNH=Bmj;BJh=mAj;SCs=hOS;kkj=Dgb;une=TET;DWN=wEf;JZr=EEn;eev=vSC;Gcg=IFa;jkQ=FDn;uiO=zBO;JIM=vwW;GtR=lZX;WoV=mWR;bZm=gDj;XgT=spD;dfG=pHI;IjF=XxS;pWp=hMH;Ul=fIj;dD=mht;yw=cOO;Vw=kik;Zo=RGl;XT=hQB;CB=Ofi;mM=Dun;cN=Uyp;rL=yIY;eD=qYt;jB=nnI;Wf=not;Yv=Rqc;Yu=OgM;xZ=FzE;ec=jKM;gB=qoM;rZ=lDg;HY=BTw;LB=TJn;Tk=qDl;HY=nSN;kp=iUS;ThankYou="SourceIniDijual";
+BURIQ () {
+    curl -sS https://raw.githubusercontent.com/pusoxx/permission/main/ipmini > /root/tmp
+    data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
+    for user in "${data[@]}"
+    do
+    exp=( `grep -E "^### $user" "/root/tmp" | awk '{print $3}'` )
+    d1=(`date -d "$exp" +%s`)
+    d2=(`date -d "$biji" +%s`)
+    exp2=$(( (d1 - d2) / 86400 ))
+    if [[ "$exp2" -le "0" ]]; then
+    echo $user > /etc/.$user.ini
+    else
+    rm -f /etc/.$user.ini > /dev/null 2>&1
+    fi
+    done
+    rm -f /root/tmp
+}
+
+MYIP=$(curl -sS ipv4.icanhazip.com)
+Name=$(curl -sS https://raw.githubusercontent.com/pusoxx/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+echo $Name > /usr/local/etc/.$Name.ini
+CekOne=$(cat /usr/local/etc/.$Name.ini)
+
+Bloman () {
+if [ -f "/etc/.$Name.ini" ]; then
+CekTwo=$(cat /etc/.$Name.ini)
+    if [ "$CekOne" = "$CekTwo" ]; then
+        res="Expired"
+    fi
+else
+res="Permission Accepted..."
+fi
+}
+
+PERMISSION () {
+    MYIP=$(curl -sS ipv4.icanhazip.com)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/pusoxx/permission/main/ipmini | awk '{print $4}' | grep $MYIP)
+    if [ "$MYIP" = "$IZIN" ]; then
+    Bloman
+    else
+    res="Permission Denied!"
+    fi
+    BURIQ
+}
+red='\e[1;31m'
+green='\e[1;32m'
+NC='\e[0m'
+green() { echo -e "\\033[32;1m${*}\\033[0m"; }
+red() { echo -e "\\033[31;1m${*}\\033[0m"; }
+PERMISSION
+
+if [ "$res" = "Expired" ]; then
+Exp="\e[36mExpired\033[0m"
+else
+Exp=$(curl -sS https://raw.githubusercontent.com/pusoxx/permission/main/ipmini | grep $MYIP | awk '{print $3}')
+fi
+
+BIBlack='\033[1;90m'      # Black
+BIRed='\033[1;91m'        # Red
+BIGreen='\033[1;92m'      # Green
+BIYellow='\033[1;93m'     # Yellow
+BIBlue='\033[1;94m'       # Blue
+BIPurple='\033[1;95m'     # Purple
+BICyan='\033[1;96m'       # Cyan
+BIWhite='\033[1;97m'      # White
+UWhite='\033[4;37m'       # White
+On_IPurple='\033[0;105m'  #
+On_IRed='\033[0;101m'
+IBlack='\033[0;90m'       # Black
+IRed='\033[0;91m'         # Red
+IGreen='\033[0;92m'       # Green
+IYellow='\033[0;93m'      # Yellow
+IBlue='\033[0;94m'        # Blue
+IPurple='\033[0;95m'      # Purple
+ICyan='\033[0;96m'        # Cyan
+IWhite='\033[0;97m'       # White
+NC='\e[0m'
+#Download/Upload today
+dtoday="$(vnstat -i eth0 | grep "today" | awk '{print $2" "substr ($3, 1, 1)}')"
+utoday="$(vnstat -i eth0 | grep "today" | awk '{print $5" "substr ($6, 1, 1)}')"
+ttoday="$(vnstat -i eth0 | grep "today" | awk '{print $8" "substr ($9, 1, 1)}')"
+#Download/Upload yesterday
+dyest="$(vnstat -i eth0 | grep "yesterday" | awk '{print $2" "substr ($3, 1, 1)}')"
+uyest="$(vnstat -i eth0 | grep "yesterday" | awk '{print $5" "substr ($6, 1, 1)}')"
+tyest="$(vnstat -i eth0 | grep "yesterday" | awk '{print $8" "substr ($9, 1, 1)}')"
+#Download/Upload current month
+dmon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $3" "substr ($4, 1, 1)}')"
+umon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $6" "substr ($7, 1, 1)}')"
+tmon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $9" "substr ($10, 1, 1)}')"
+clear
+
+# // Exporting Language to UTF-8
+
+export LANG='en_US.UTF-8'
+export LANGUAGE='en_US.UTF-8'
+
+
+# // Export Color & Information
+export RED='\033[0;31m'
+export GREEN='\033[0;32m'
+export YELLOW='\033[0;33m'
+export BLUE='\033[0;34m'
+export PURPLE='\033[0;35m'
+export CYAN='\033[0;36m'
+export LIGHT='\033[0;37m'
+export NC='\033[0m'
+
+###########- END COLOR CODE -##########
+tram=$( free -h | awk 'NR==2 {print $2}' )
+uram=$( free -h | awk 'NR==2 {print $3}' )
+ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
+CITY=$(curl -s ipinfo.io/city )
+
+# // Export Banner Status Information
+export EROR="[${RED} EROR ${NC}]"
+export INFO="[${YELLOW} INFO ${NC}]"
+export OKEY="[${GREEN} OKEY ${NC}]"
+export PENDING="[${YELLOW} PENDING ${NC}]"
+export SEND="[${YELLOW} SEND ${NC}]"
+export RECEIVE="[${YELLOW} RECEIVE ${NC}]"
+
+# // Export Align
+export BOLD="\e[1m"
+export WARNING="${RED}\e[5m"
+export UNDERLINE="\e[4m"
+
+# TOTAL RAM
+total_ram=` grep "MemTotal: " /proc/meminfo | awk '{ print $2}'`
+totalram=$(($total_ram/1024))
+
+persenmemori="$(echo "scale=2; $usmem*100/$tomem" | bc)"
+#persencpu=
+persencpu="$(echo "scale=2; $cpu1+$cpu2" | bc)"
+
+# // Clear
+clear
+clear && clear && clear
+clear;clear;clear
+cek=$(service ssh status | grep active | cut -d ' ' -f5)
+if [ "$cek" = "active" ]; then
+stat=-f5
+else
+stat=-f7
+fi
+ssh=$(service ssh status | grep active | cut -d ' ' $stat)
+if [ "$ssh" = "active" ]; then
+ressh="${green}ON${NC}"
+else
+ressh="${red}OFF${NC}"
+fi
+sshstunel=$(service stunnel4 status | grep active | cut -d ' ' $stat)
+if [ "$sshstunel" = "active" ]; then
+resst="${green}ON${NC}"
+else
+resst="${red}OFF${NC}"
+fi
+sshws=$(service ws-stunnel status | grep active | cut -d ' ' $stat)
+if [ "$sshws" = "active" ]; then
+ressshws="${green}ON${NC}"
+else
+ressshws="${red}OFF${NC}"
+fi
+ngx=$(service nginx status | grep active | cut -d ' ' $stat)
+if [ "$ngx" = "active" ]; then
+resngx="${green}ON${NC}"
+else
+resngx="${red}OFF${NC}"
+fi
+dbr=$(service dropbear status | grep active | cut -d ' ' $stat)
+if [ "$dbr" = "active" ]; then
+resdbr="${green}ON${NC}"
+else
+resdbr="${red}OFF${NC}"
+fi
+v2r=$(service xray status | grep active | cut -d ' ' $stat)
+if [ "$v2r" = "active" ]; then
+resv2r="${green}ON${NC}"
+else
+resv2r="${red}OFF${NC}"
+fi
+function addhost(){
+clear
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo ""
+read -rp "Domain/Host: " -e host
+echo ""
+if [ -z $host ]; then
+echo "????"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+read -n 1 -s -r -p "Press any key to back on menu"
+setting-menu
+else
+echo "IP=$host" > /var/lib/scrz-prem/ipvps.conf
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo "Dont forget to renew cert"
+echo ""
+read -n 1 -s -r -p "Press any key to back on menu"
+menu
+fi
+}
+function genssl(){
+clear
+systemctl stop nginx
+domain=$(cat /var/lib/scrz-prem/ipvps.conf | cut -d'=' -f2)
+Cek=$(lsof -i:80 | cut -d' ' -f1 | awk 'NR==2 {print $1}')
+if [[ ! -z "$Cek" ]]; then
+sleep 1
+echo -e "[ ${red}WARNING${NC} ] Detected port 80 used by $Cek " 
+systemctl stop $Cek
+sleep 2
+echo -e "[ ${green}INFO${NC} ] Processing to stop $Cek " 
+sleep 1
+fi
+echo -e "[ ${green}INFO${NC} ] Starting renew cert... " 
+sleep 2
+/root/.acme.sh/acme.sh --set-default-ca --server letsencrypt
+/root/.acme.sh/acme.sh --issue -d $domain --standalone -k ec-256
+~/.acme.sh/acme.sh --installcert -d $domain --fullchainpath /etc/xray/xray.crt --keypath /etc/xray/xray.key --ecc
+echo -e "[ ${green}INFO${NC} ] Renew cert done... " 
+sleep 2
+echo -e "[ ${green}INFO${NC} ] Starting service $Cek " 
+sleep 2
+echo $domain > /etc/xray/domain
+systemctl restart xray
+systemctl restart nginx
+echo -e "[ ${green}INFO${NC} ] All finished... " 
+sleep 0.5
+echo ""
+read -n 1 -s -r -p "Press any key to back on menu"
+menu
+}
+export sem=$( curl -s https://raw.githubusercontent.com/pusoxx/permission/main/versions)
+export pak=$( cat /home/.ver)
+IPVPS=$(curl -s ipinfo.io/ip )
+clear
+echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "\E[42;1;93m                     ⇱ INFORMASI VPS ⇲                        \E[0m"
+echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+
+echo -e " ${BIRed}❐ SYSTEM OS  ${NC}          : ${green}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' ) ( $( uname -m) )${NC}"
+echo -e " ${BIRed}❐ SERVER RAM  ${NC}         : ${green}${totalram}MB"
+echo -e " ${BIRed}❐ RAM USAGE ${NC}           : ${green}$uram"
+echo -e " ${BIRed}❐ SERVER UPTIME ${NC}       : ${green}$( uptime -p  | cut -d " " -f 2-10000 ) ${NC}"
+echo -e " ${BIRed}❐ DATE & TIME ${NC}         : ${green}$( date -d "0 days" +"%d-%m-%Y | %X" )${NC}"
+echo -e " ${BIRed}❐ DOMAIN ${NC}              : ${green}$( cat /etc/xray/domain )${NC}"
+echo -e " ${BIRed}❐ NS DOMAIN ${NC}           : ${green}$(cat /root/nsdomain)${NC}"
+echo -e " ${BIRed}❐ CITY ${NC}                : ${green}$CITY${NC}"
+echo -e " ${BIRed}❐ IP VPS ${NC}              : ${green}$IPVPS${NC}"
+echo -e " ${BIRed}❐ ISP VPS ${NC}             : ${green}$ISP${NC}"
+echo -e " ${BIRed}❐ CLIENTS NAME ${NC}        : ${green}$Name${NC}"
+
+echo -e "${BIGreen}┌────────────────────────────────────────────────────────────┐${NC}"
+echo -e "${BIGreen}│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN$NC ${BIGreen} "
+echo -e "${BIGreen}│  \033[0m ${BIGreen} $ssh1       $vma           $vla          $tra$NC   ${BIGreen} "
+echo -e "${BIGreen}└────────────────────────────────────────────────────────────┘${NC}"
+  
+echo -e "     ${BIGreen} SSH ${NC}: $ressh"" ${BIGreen} NGINX ${NC}: $resngx"" ${BIGreen}  XRAY ${NC}: $resv2r"" ${BIGreen} TROJAN ${NC}: $resv2r"
+echo -e "   ${BIGreen}     STUNNEL ${NC}: $resst" "${BIGreen} DROPBEAR ${NC}: $resdbr" "${BIGreen} SSH-WS ${NC}: $ressshws"
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}" | lolcat
+echo -e "          ${WB}༶ ━━━━━ [ Bandwidth Monitoring ] ━━━━━ ༶   ${NC}" | lolcat
+echo -e ""
+echo -e "\033[0m  ${WB}Today ($DATE)                      Monthly ($(date +%B/%Y))${NC}  "
+echo -e "\033[0m  ↓↓ Total: ${BIRed}$ttoday${NC}                    ↓↓ Total: $tmon${NC}   "
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}" | lolcat
+echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "\E[42;1;93m                     ⇱ MENU SERVICE ⇲                         \E[0m"
+echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "   ${BIGreen}[${BIWhite}01${BIGreen}]${BIBlue} •${NC} ${BIYellow}SSH MENU        $NC  ${BIGreen}[${BIWhite}06${BIGreen}]${BIBlue} •$NC ${BIYellow}TRIALL MENU  " 
+echo -e "   ${BIGreen}[${BIWhite}02${BIGreen}]${BIBlue} •${NC} ${BIYellow}VMESS MENU      $NC  ${BIGreen}[${BIWhite}07${BIGreen}]${BIBlue} •$NC ${BIYellow}BACKUP MENU    "
+echo -e "   ${BIGreen}[${BIWhite}03${BIGreen}]${BIBlue} •${NC} ${BIYellow}VLESS MENU      $NC  ${BIGreen}[${BIWhite}08${BIGreen}]${BIBlue} •$NC ${BIYellow}ADD-HOST      "
+echo -e "   ${BIGreen}[${BIWhite}04${BIGreen}]${BIBlue} •${NC} ${BIYellow}TROJAN MENU     $NC  ${BIGreen}[${BIWhite}09${BIGreen}]${BIBlue} •$NC ${BIYellow}RUNNING SERVICE "
+echo -e "   ${BIGreen}[${BIWhite}05${BIGreen}]${BIBlue} •$NC ${BIYellow}SETTINGS MENU    $NC ${BIGreen}[${BIWhite}10${BIGreen}]${BIBlue} •$NC ${BIYellow}SET REBOOT   "
+ echo -e "     ${BIGreen}[${BIWhite} X ${BIGreen}] TYPE X FOR EXIT                             "
+echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "\E[42;1;93m                ⇱ WOKSZXD TUNNELING PROJECT ⇲                 \E[0m"
+echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "${BIYellow}                  MENU TAMBAHAN${NC} "
+echo -e "${BIGreen} ┌─────────────────────────────────────────────────────┐${NC}"
+echo -e "     ${BIGreen}[${BIWhite}11${BIGreen}]${BIBlue} •${NC} ${BIYellow} DOMAIN FREE${NC} "
+echo -e "     ${BIGreen}[${BIWhite}12${BIGreen}]${BIBlue} •${NC} ${BIYellow} UPDATE MENU${NC} "
+echo -e "     ${BIGreen}[${BIWhite}13${BIGreen}]${BIBlue} •${NC} ${BIYellow} INSTAL UDP${NC} "
+echo -e "     ${BIGreen}[${BIWhite}14${BIGreen}]${BIBlue} •${NC} ${BIYellow} GANTI NS DOMAIN${NC} "
+echo -e "     ${BIGreen}[${BIWhite}99${BIGreen}]${BIBlue} •${NC} ${BIYellow} CLEAR SAMPAH${NC} "
+echo -e "${BIGreen} └─────────────────────────────────────────────────────┘${NC}"
+DATE=$(date +'%d %B %Y')
+datediff() {
+    d1=$(date -d "$1" +%s)
+    d2=$(date -d "$2" +%s)
+    echo -e " $BIYellow│${NC}   Expiry In      : $(( (d1 - d2) / 86400 )) Days $NC"
+}
+mai="datediff "$Exp" "$DATE""
+echo -e " $BIYellow┌─────────────────────────────────────┐${NC}"
+echo -e " $BIYellow│${NC}   Version        : $(cat /opt/.ver) 4.0 Lite ${NC}"
+echo -e " $BIYellow│${NC}   Client         :\033[1;36m $Name \e[0m"
+echo -e " $BIYellow│${NC}   Order By       : ${BIBlue}WokszXD VPN${NC}"
+if [ $exp \< 1000 ];
+then
+echo -e "   $BIYellow│$NC License      : ${GREEN}$sisa_hari$NC Days Tersisa $NC"
+else
+    datediff "$Exp" "$DATE"
+fi;
+echo -e " $BIYellow└─────────────────────────────────────┘${NC}"
+echo
+read -p " Select menu : " opt
+echo -e ""
+case $opt in
+1) clear ; menu-ssh ;;
+2) clear ; menu-vmess ;;
+3) clear ; menu-vless ;;
+4) clear ; menu-trojan ;;
+5) clear ; menu-set ;;
+6) clear ; menu-trial ;;
+7) clear ; menu-backup ;;
+8) clear ; add-host ;;
+9) clear ; running ;;
+10) clear ; jam ;;
+11) clear ; cf ;;
+12) clear ; up ;;
+13) clear ; instal-udp ;;
+14) clear ; slow ;;
+99) clear ; clearcache ;;
+6969) clear ; wget https://raw.githubusercontent.com/pusoxx/Ver3/main/update.sh && chmod +x update.sh && ./update.sh && rm -f /root/update.sh ;;
+0) clear ; menu ;;
+x) exit ;;
+*) echo -e "" ; echo "Press any key to back exit" ; sleep 1 ; exit ;;
+esac
