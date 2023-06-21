@@ -335,7 +335,7 @@ case $opt in
 12) clear ; up ;;
 13) clear ; wget https://raw.githubusercontent.com/pusoxx/Ver3/main/update.sh && chmod +x update.sh && ./update.sh && rm -f /root/update.sh ;;
 14) clear ; slow ;;
-15) clear ; wget https://raw.githubusercontent.com/pusoxx/ver3/main/tcp.sh && chmod +x tcp.sh && ./tcp.sh
+15) clear ; wget https://raw.githubusercontent.com/pusoxx/ver3/main/tcp.sh && chmod +x tcp.sh && ./tcp.sh ;;
 99) clear ; clearcache ;;
 0) clear ; menu ;;
 x) exit ;;
