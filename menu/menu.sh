@@ -296,6 +296,7 @@ echo -e "     ${BIGreen}[${BIWhite}11${BIGreen}]${BIBlue} •${NC} ${BIYellow} D
 echo -e "     ${BIGreen}[${BIWhite}12${BIGreen}]${BIBlue} •${NC} ${BIYellow} UPDATE MENU${NC} "
 echo -e "     ${BIGreen}[${BIWhite}13${BIGreen}]${BIBlue} •${NC} ${BIYellow} INSTAL UDP${NC} "
 echo -e "     ${BIGreen}[${BIWhite}14${BIGreen}]${BIBlue} •${NC} ${BIYellow} GANTI NS DOMAIN${NC} "
+echo -e "     ${BIGreen}[${BIWhite}15${BIGreen}]${BIBlue} •${NC} ${BIYellow} INSTALL TCP BBR${NC} "
 echo -e "     ${BIGreen}[${BIWhite}99${BIGreen}]${BIBlue} •${NC} ${BIYellow} CLEAR SAMPAH${NC} "
 echo -e "${BIGreen} └─────────────────────────────────────────────────────┘${NC}"
 DATE=$(date +'%d %B %Y')
@@ -332,10 +333,10 @@ case $opt in
 10) clear ; jam ;;
 11) clear ; cf ;;
 12) clear ; up ;;
-13) clear ; instal-udp ;;
+13) clear ; clear ; wget https://raw.githubusercontent.com/pusoxx/Ver3/main/update.sh && chmod +x update.sh && ./update.sh && rm -f /root/update.sh ;;
 14) clear ; slow ;;
+15) clear ; tcp ;;
 99) clear ; clearcache ;;
-6969) clear ; wget https://raw.githubusercontent.com/pusoxx/Ver3/main/update.sh && chmod +x update.sh && ./update.sh && rm -f /root/update.sh ;;
 0) clear ; menu ;;
 x) exit ;;
 *) echo -e "" ; echo "Press any key to back exit" ; sleep 1 ; exit ;;
