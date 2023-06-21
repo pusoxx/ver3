@@ -11,7 +11,7 @@
 
 
 <h2 align="center">
-Auto Script Install All VPN BY XLORD 
+Auto Script Install All VPN BY WokszXd
 <img src="https://img.shields.io/badge/Version-4.0.1-blue.svg"></h2>
 
 </p> 
@@ -29,11 +29,11 @@ Auto Script Install All VPN BY XLORD
 
 # SCAN TO PAY
   
-![logo](https://raw.githubusercontent.com/xlord27/VPN/main/IMG-20230514-WA0390.jpg)
+![logo](https://telegra.ph/file/d46d49169f110d62ea04a.jpg)
 
 
 # HARGA SEWA SC
 
-## 5K 1IP
-## 20K LIFETIME 1IP
-## MINAT? t.me/xlordeuyy
+## 10 1IP
+## 25K LIFETIME 1IP
+## MINAT? t.me/WokszXd
