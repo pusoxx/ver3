@@ -131,7 +131,7 @@ chmod +x up
 
 chmod +x slow
 chmod +x tcp
-chmod +x add-ip
+chmod +x addip-menu
 chmod +x menu-ssh
 chmod +x instal-udp
 chmod +x usernew
