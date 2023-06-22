@@ -52,6 +52,7 @@ rm -rf up
 rm -rf genssl
 rm -rf slow
 rm -rf tcp
+rm -rf add-ip
 # download script
 cd /usr/bin
 # menu
@@ -67,7 +68,8 @@ wget -O menu-trgo "https://raw.githubusercontent.com/artanodrop/v4/main/menu/men
 wget -O menu-trojan "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/menu-trojan.sh"
 wget -O cf "https://raw.githubusercontent.com/pusoxx/ver3/main/cf.sh"
 wget -O slow "https://raw.githubusercontent.com/pusoxx/ver3/main/slow.sh"
-wget -O tcp "https://raw.githubusercontent.com/pusoxx/ver3/main/tcp.sh"
+wget -O tcp "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/tcp.sh"
+wget -O add-ip "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/add-ip.sh"
 wget -O instal-udp "https://raw.githubusercontent.com/pusoxx/ver3/main/instal-udp.sh"
 
 # menu ssh ovpn
@@ -129,6 +131,7 @@ chmod +x up
 
 chmod +x slow
 chmod +x tcp
+chmod +x add-ip
 chmod +x menu-ssh
 chmod +x instal-udp
 chmod +x usernew
