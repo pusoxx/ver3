@@ -52,7 +52,7 @@ rm -rf up
 rm -rf genssl
 rm -rf slow
 rm -rf tcp
-rm -rf add-ip
+rm -rf addip-menu
 # download script
 cd /usr/bin
 # menu
@@ -69,7 +69,7 @@ wget -O menu-trojan "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/men
 wget -O cf "https://raw.githubusercontent.com/pusoxx/ver3/main/cf.sh"
 wget -O slow "https://raw.githubusercontent.com/pusoxx/ver3/main/slow.sh"
 wget -O tcp "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/tcp.sh"
-wget -O add-ip "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/add-ip.sh"
+wget -O addip-menu "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/addip-menu.sh"
 wget -O instal-udp "https://raw.githubusercontent.com/pusoxx/ver3/main/instal-udp.sh"
 
 # menu ssh ovpn
