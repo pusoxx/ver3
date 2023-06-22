@@ -87,7 +87,7 @@ add-ip() {
     git commit -m m &> /dev/null
     git branch -M main &> /dev/null
     git remote add origin https://github.com/pusoxx/permission
-    git push -f https://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@github.com/pusoxx/permission.git &> /dev/null
+    git push -f https://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@github.com/pusoxx/permission.git &> /dev/null
     rm -rf /root/ipvps
     clear
     echo -e "${CYAN}Succesfully Add IP Address${NC}"
@@ -112,9 +112,9 @@ del-ip() {
     grep -E "^#&" "/root/ipvps/ipmini" | cut -d ' ' -f 2-6 | column -t | sort | uniq
     echo ""
     read -p "Input IP Address To Delete : " ipdel
-    name=$(cat /root/ipvps/ip | grep $ipdel | awk '{print $2}')
-    oid=$(cat /root/ipvps/ip | grep $ipdel | awk '{print $3}')
-    exp=$(cat /root/ipvps/ip | grep $ipdel | awk '{print $4}')
+    name=$(cat /root/ipvps/ipmini | grep $ipdel | awk '{print $2}')
+    oid=$(cat /root/ipvps/ipmini | grep $ipdel | awk '{print $3}')
+    exp=$(cat /root/ipvps/ipmini | grep $ipdel | awk '{print $4}')
     if [[ ${exp} == 'Lifetime' ]]; then
     sed -i "/^#& $name $oid $exp $ipdel/,/^},{/d" /root/ipvps/ipmini
     else
@@ -129,7 +129,7 @@ del-ip() {
     git commit -m m &> /dev/null
     git branch -M main &> /dev/null
     git remote add origin https://github.com/pusoxx/permission
-    git push -f https://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@github.com/pusoxx/permission.git &> /dev/null
+    git push -f https://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@github.com/pusoxx/permission.git &> /dev/nullll
     rm -rf /root/ipvps
     clear
     echo "Succesfully Deleted The IP Address"
@@ -143,7 +143,7 @@ renew-ip() {
     clear
     echo "List IP Address Have Been Registered"
     echo ""
-    grep -E "^###" "/root/ipvps/ip" | cut -d ' ' -f 2-6 | column -t | sort | uniq
+    grep -E "^###" "/root/ipvps/ipmini" | cut -d ' ' -f 2-6 | column -t | sort | uniq
     echo ""
     read -p "Input IP Address To Renew : " ipdel
     read -p "Input Days  : " days
@@ -166,7 +166,7 @@ renew-ip() {
     git commit -m m &> /dev/null
     git branch -M main &> /dev/null
     git remote add origin https://github.com/pusoxx/permission
-    git push -f https://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@github.com/pusoxx/permission.git &> /dev/null
+    git push -f https://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@github.com/pusoxx/permission.git &> /dev/null
     rm -rf /root/ipvps
     clear
     echo "Succesfully Renew The IP Address"
