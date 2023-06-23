@@ -297,7 +297,7 @@ echo -e "     ${BIGreen}[${BIWhite}12${BIGreen}]${BIBlue} •${NC} ${BIYellow} U
 echo -e "     ${BIGreen}[${BIWhite}13${BIGreen}]${BIBlue} •${NC} ${BIYellow} INSTAL UDP${NC} "
 echo -e "     ${BIGreen}[${BIWhite}14${BIGreen}]${BIBlue} •${NC} ${BIYellow} GANTI NS DOMAIN${NC} "
 echo -e "     ${BIGreen}[${BIWhite}15${BIGreen}]${BIBlue} •${NC} ${BIYellow} INSTALL TCP BBR${NC} "
-echo -e "     ${BIGreen}[${BIWhite}16${BIGreen}]${BIBlue} •${NC} ${BIYellow} ADD IP ${NC} "
+echo -e "     ${BIGreen}[${BIWhite}16${BIGreen}]${BIBlue} •${NC} ${BIYellow} ADD IP MENU ${NC} "
 echo -e "     ${BIGreen}[${BIWhite}17${BIGreen}]${BIBlue} •${NC} ${BIYellow} WEBMIN MENU ${NC} "
 echo -e "     ${BIGreen}[${BIWhite}99${BIGreen}]${BIBlue} •${NC} ${BIYellow} CLEAR SAMPAH${NC} "
 echo -e "${BIGreen} └─────────────────────────────────────────────────────┘${NC}"
@@ -339,7 +339,7 @@ case $opt in
 14) clear ; slow ;;
 15) clear ; tcp ;;
 16) clear ; addip-menu ;;
-17) clear ; menu-webmin
+17) clear ; menu-webmin ;;
 99) clear ; clearcache ;;
 0) clear ; menu ;;
 x) exit ;;
