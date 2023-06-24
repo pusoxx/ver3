@@ -48,7 +48,7 @@ PID=`ps -ef |grep -v grep | grep sshws |awk '{print $2}'`
 if [[ ! -z "${PID}" ]]; then
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m        𝗔𝗦𝗦𝗔𝗦𝗜𝗡 𝗧𝗨𝗡𝗡𝗘𝗟𝗜𝗡𝗚           \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37m        𝗔𝗦𝗦𝗔𝗦𝗦𝗜𝗡 𝗧𝗨𝗡𝗡𝗘𝗟𝗜𝗡𝗚           \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 echo -e "\E[40;1;37m           𝗦𝗦𝗛/𝗗𝗿𝗼𝗽𝗯𝗲𝗮𝗿           \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
@@ -105,8 +105,9 @@ echo -e "\e[33m—————————————————————�
 else
 
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m        𝗔𝗦𝗦𝗔𝗦𝗜𝗡 𝗧𝗨𝗡𝗡𝗘𝗟𝗜𝗡𝗚           \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37m        𝗔𝗦𝗦𝗔𝗦𝗦𝗜𝗡 𝗧𝗨𝗡𝗡𝗘𝗟𝗜𝗡𝗚           \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
+
 echo -e "\E[40;1;37m           𝗦𝗦𝗛/𝗗𝗿𝗼𝗽𝗯𝗲𝗮𝗿           \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 echo -e "HOST        : $(cat /etc/xray/domain)" | tee -a /etc/log-create-user.log
@@ -115,31 +116,35 @@ echo -e "Username    : $Login" | tee -a /etc/log-create-user.log
 echo -e "Password    : $Pass" | tee -a /etc/log-create-user.log
 echo -e "PubKey      : $slkey" | tee -a /etc/log-create-user.log
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
-echo -e "OpenSSH        : 22" | tee -a /etc/log-create-user.log
-echo -e "Dropbear         : 80,90,69,143" | tee -a /etc/log-create-user.log
+echo -e "UdpCustom     : 1-65535" | tee -a /etc/log-create-user.log                 
+echo -e "OpenSSH       : 22" | tee -a /etc/log-create-user.log
+echo -e "Dropbear      : 80,90,69,143" | tee -a /etc/log-create-user.log
 echo -e "OpenSSH SSL   : 443" | tee -a /etc/log-create-user.log
-echo -e "Dropbear SSL    : 443" | tee -a /etc/log-create-user.log
+echo -e "Dropbear SSL  : 443" | tee -a /etc/log-create-user.log
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
-echo -e "SlowDNS     : 53,5300,443" 
-echo -e "BadVPN UDPGW       : 7100-7300" | tee -a /etc/log-create-user.log
-echo -e "OpenVPN TCP       : 80,1194" | tee -a /etc/log-create-user.log
-echo -e "OpenVPN SSL       : 443" | tee -a /etc/log-create-user.log
-echo -e "OpenVPN UDP       : 25000" | tee -a /etc/log-create-user.log
+echo -e "SlowDNS         : 53,5300,443" 
+echo -e "BadVPN UDPGW    : 7100-7300" | tee -a /etc/log-create-user.log
+echo -e "OpenVPN TCP     : 80,1194" | tee -a /etc/log-create-user.log
+echo -e "OpenVPN SSL     : 443" | tee -a /etc/log-create-user.log
+echo -e "OpenVPN UDP     : 25000" | tee -a /etc/log-create-user.log
 echo -e "OpenVPN WS      : 7444" | tee -a /etc/log-create-user.log
-echo -e "OpenVPN WS SSL       : 7443" | tee -a /etc/log-create-user.log
-echo -e "OpenVPN DNS       : 53" | tee -a /etc/log-create-user.log
+echo -e "OpenVPN WS SSL  : 7443" | tee -a /etc/log-create-user.log
+echo -e "OpenVPN DNS     : 53" | tee -a /etc/log-create-user.log
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Payload SSH CDN Port 80" | tee -a /etc/log-create-user.log
+
 echo -e "
 GET / HTTP/1.1 Host: [host_port]User-Agent: [ua]Upgrade: websocket[crlf][crlf]
 " | tee -a /etc/log-create-user.log
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Payload SSH TLS/WSS Port 443" | tee -a /etc/log-create-user.log
+
 echo -e "
 GET wss://BUG/ HTTP/1.1[crlf]Host: [host]User-Agent: [ua]Upgrade: Websocket[crlf][crlf]
 " | tee -a /etc/log-create-user.log
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Payload SSH WS Non TLS Port 7788" | tee -a /etc/log-create-user.log
+
 echo -e "Path - /whatever" | tee -a /etc/log-create-user.log
 echo -e "GET wss://BUG/worryfree HTTP/1.1[crlf]Host: [host]User-Agent: [ua]Upgrade: Websocket[crlf][crlf]
 " | tee -a /etc/log-create-user.log
@@ -156,7 +161,7 @@ echo -e "\e[33m—————————————————————�
 
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 echo -e "${CYAN}    Terimakasih sudah menggunakan-
-                       Script Credit by Assasin"
+                       Script Credit by Assassin"
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 fi
 echo "" | tee -a /etc/log-create-user.log
