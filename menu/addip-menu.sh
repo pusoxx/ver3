@@ -11,7 +11,7 @@ else
 clear
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "                ${RED}PERMISSION DENIED ! "${NC}
-echo -e "     Your VPS ${NC}( ${green}$IP${NC} ) ${YELLOW}Has been Banned "
+echo -e "     Your VPS ${NC}( ${green}$IPVPS${NC} ) ${YELLOW}Has been Banned "
 echo -e "         Buy access permissions for scripts "
 echo -e "                 Contact Admin :"
 
