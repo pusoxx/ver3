@@ -281,7 +281,7 @@ wget -O menu-trgo "https://raw.githubusercontent.com/artanodrop/v4/main/menu/men
 wget -O menu-trojan "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/menu-trojan.sh"
 wget -O cf "https://raw.githubusercontent.com/pusoxx/ver3/main/cf.sh"
 wget -O tcp "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/tcp.sh"
-wget -O tcp "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/addip-menu.sh"
+wget -O addip-menu "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/addip-menu.sh"
 
 # menu ssh ovpn
 wget -O menu-ssh "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/menu-ssh.sh"
@@ -335,6 +335,8 @@ chmod +x menu-trgo
 chmod +x menu-trojan
 chmod +x cf
 chmod +x up
+chmod +x tcp
+chmod +x addip-menu
 
 chmod +x menu-ssh
 chmod +x usernew
