@@ -89,17 +89,17 @@ echo -e "GET wss://BUG/worryfree HTTP/1.1[crlf]Host: [host]User-Agent: [ua]Upgra
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 echo -e "\E[40;1;37m          𝗢𝗽𝗲𝗻𝗩𝗣𝗡            \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
-echo -e "OpenVPN WS SSL   : https://$(cat /etc/xray/domain):81/"$domain"-ws-ssl.ovpn"
-echo -e "OpenVPN SSL      : https://$(cat /etc/xray/domain):81/"$domain"-ssl.ovpn"
-echo -e "OpenVPN TCP      : https://$(cat /etc/xray/domain):81/"$domain"-tcp.ovpn"
-echo -e "OpenVPN UDP      : https://$(cat /etc/xray/domain):81/"$domain"-udp.ovpn"
+echo -e "OpenVPN WS SSL   : https://$domen:81/"$domen"-ws-ssl.ovpn"
+echo -e "OpenVPN SSL      : https://$domen:81/"$domen"-ssl.ovpn"
+echo -e "OpenVPN TCP      : https://$domen:81/"$domen"-tcp.ovpn"
+echo -e "OpenVPN UDP      : https://$domen:81/"$domen"-udp.ovpn"
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Expired On  : $exp" | tee -a /etc/log-create-user.log
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 echo -e "${CYAN}    Terimakasih sudah menggunakan-
-                       Script Credit by Assasin"
+                       Script Credit by Assassin"
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 
 else
@@ -151,10 +151,10 @@ echo -e "GET wss://BUG/worryfree HTTP/1.1[crlf]Host: [host]User-Agent: [ua]Upgra
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 echo -e "\E[40;1;37m          𝗢𝗽𝗲𝗻𝗩𝗣𝗡            \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
-echo -e "OpenVPN WS SSL   : https://$IP:81/"$domain"-ws-ssl.ovpn"
-echo -e "OpenVPN SSL      : https://$IP:81/"$domain"-ssl.ovpn"
-echo -e "OpenVPN TCP      : https://$IP:81/"$domain"-tcp.ovpn"
-echo -e "OpenVPN UDP      : https://$IP:81/"$domain"-udp.ovpn"
+echo -e "OpenVPN WS SSL   : https://$domen:81/"$domen"-ws-ssl.ovpn"
+echo -e "OpenVPN SSL      : https://$domen:81/"$domen"-ssl.ovpn"
+echo -e "OpenVPN TCP      : https://$domen:81/"$domen"-tcp.ovpn"
+echo -e "OpenVPN UDP      : https://$domen:81/"$domen"-udp.ovpn"
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Expired On  : $exp" | tee -a /etc/log-create-user.log
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
