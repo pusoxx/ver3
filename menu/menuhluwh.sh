@@ -262,7 +262,7 @@ echo -e " ${BIRed}❐ SERVER RAM  ${NC}         : ${green}${totalram}MB"
 echo -e " ${BIRed}❐ RAM USAGE ${NC}           : ${green}$uram"
 echo -e " ${BIRed}❐ SERVER UPTIME ${NC}       : ${green}$( uptime -p  | cut -d " " -f 2-10000 ) ${NC}"
 echo -e " ${BIRed}❐ DATE & TIME ${NC}         : ${green}$( date -d "0 days" +"%d-%m-%Y | %X" )${NC}"
-echo -e " ${BIRed}❐ CPU USAGE ${NC           : ${green}$cpu_usage"
+echo -e " ${BIRed}❐ CPU USAGE ${NC            : ${green}$cpu_usage"
 echo -e " ${BIRed}❐ DOMAIN ${NC}              : ${green}$( cat /etc/xray/domain )${NC}"
 echo -e " ${BIRed}❐ NS DOMAIN ${NC}           : ${green}$(cat /root/nsdomain)${NC}"
 echo -e " ${BIRed}❐ CITY ${NC}                : ${green}$CITY${NC}"
@@ -302,8 +302,7 @@ echo -e "     ${BIGreen}[${BIWhite}12${BIGreen}]${BIBlue} •${NC} ${BIYellow} U
 echo -e "     ${BIGreen}[${BIWhite}13${BIGreen}]${BIBlue} •${NC} ${BIYellow} INSTAL UDP${NC} "
 echo -e "     ${BIGreen}[${BIWhite}14${BIGreen}]${BIBlue} •${NC} ${BIYellow} GANTI NS DOMAIN${NC} "
 echo -e "     ${BIGreen}[${BIWhite}15${BIGreen}]${BIBlue} •${NC} ${BIYellow} INSTALL TCP BBR${NC} "
-echo -e "     ${BIGreen}[${BIWhite}16${BIGreen}]${BIBlue} •${NC} ${BIYellow} ADD IP MENU${NC} "
-echo -e "     ${BIGreen}[${BIWhite}17${BIGreen}]${BIBlue} •${NC} ${BIYellow} BOT TELEGRAM${NC} "
+echo -e "     ${BIGreen}[${BIWhite}16${BIGreen}]${BIBlue} •${NC} ${BIYellow} BOT TELEGRAM${NC} "
 echo -e "     ${BIGreen}[${BIWhite}99${BIGreen}]${BIBlue} •${NC} ${BIYellow} CLEAR SAMPAH${NC} "
 echo -e "${BIGreen} └─────────────────────────────────────────────────────┘${NC}"
 DATE=$(date +'%d %B %Y')
@@ -343,8 +342,7 @@ case $opt in
 13) clear ; wget https://raw.githubusercontent.com/pusoxx/Ver3/main/update.sh && chmod +x update.sh && ./update.sh && rm -f /root/update.sh ;;
 14) clear ; slow ;;
 15) clear ; tcp ;;
-16) clear ; addip-menu ;;
-17) clear ; m-bot ;;
+16) clear ; m-bot ;;
 99) clear ; clearcache ;;
 0) clear ; menu ;;
 x) exit ;;
