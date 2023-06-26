@@ -44,10 +44,10 @@ END='\e[0m'
 add-ip() {
     today=`date -d "0 days" +"%Y-%m-%d"`
     ran=$(date +%s)
-    git clone https://github.com/pusoxx/permission.git /root/ipvps/ &> /dev/null
+    git clone https://github.com/pusoxx/permission.git /root/permission/ &> /dev/null
     clear
     read -p "Input IP Address : " ip
-    CLIENT_EXISTS=$(grep -w $ip /root/ipvps/ipmini | wc -l)
+    CLIENT_EXISTS=$(grep -w $ip /root/permission/ipmini | wc -l)
     if [[ ${CLIENT_EXISTS} == '1' ]]; then
     echo "IP Already Exist !"
     exit 0
@@ -63,22 +63,22 @@ add-ip() {
     
     if [[ ${exp} == '1' ]]; then
     exp2=`date -d "30 days" +"%Y-%m-%d"`
-    echo "### ${name} $ran ${exp2} ${ip}" >> /root/ipvps/ipmini
+    echo "### ${name} $ran ${exp2} ${ip}" >> /root/permission/ipmini
     elif [[ ${exp} == '2' ]]; then
     exp2=`date -d "60 days" +"%Y-%m-%d"`
-    echo "### ${name} $ran ${exp2} ${ip}" >> /root/ipvps/ipmini
+    echo "### ${name} $ran ${exp2} ${ip}" >> /root/permission/ipmini
     elif [[ ${exp} == '3' ]]; then
     exp2=`date -d "90 days" +"%Y-%m-%d"`
-    echo "### ${name} $ran ${exp2} ${ip}" >> /root/ipvps/ipmini
+    echo "### ${name} $ran ${exp2} ${ip}" >> /root/permission/ipmini
     elif [[ ${exp} == '4' ]]; then
     exp2="Lifetime"
-    echo "### ${name} $ran ${exp2} ${ip}" >> /root/ipvps/ipmini
+    echo "### ${name} $ran ${exp2} ${ip}" >> /root/permission/ipmini
     elif [[ ${exp} == '5' ]]; then
     read -p "Input Expired Days : " exp11
     exp2=`date -d "$exp11 days" +"%Y-%m-%d"`
-    echo "### ${name} $ran ${exp2} ${ip}" >> /root/ipvps/ipmini
+    echo "### ${name} $ran ${exp2} ${ip}" >> /root/permission/ipmini
     fi
-    cd /root/ipvps
+    cd /root/permission
     git config --global user.email "jarwokspremium@gmail.com" &> /dev/null
     git config --global user.name "pusoxx" &> /dev/null
     rm -rf .git &> /dev/null
@@ -88,7 +88,7 @@ add-ip() {
     git branch -M main &> /dev/null
     git remote add origin https://github.com/pusoxx/permission
     git push -f https://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@github.com/pusoxx/permission.git &> /dev/null
-    rm -rf /root/ipvps
+    rm -rf /root/permission
     clear
     echo -e "${CYAN}Succesfully Add IP Address${NC}"
     echo -e ""
@@ -103,22 +103,22 @@ add-ip() {
 }
 
 del-ip() {
-    rm -rf /root/ipvps
-    git clone https://github.com/pusoxx/permission.git /root/ipvps/ &> /dev/null
+    rm -rf /root/permission
+    git clone https://github.com/pusoxx/permission.git /root/permission/ &> /dev/null
     clear
     echo "List IP Address Have Been Registered"
     echo ""
-    grep -E "^###" "/root/ipvps/ipmini" | cut -d ' ' -f 2-6 | column -t | sort | uniq
-    grep -E "^#&" "/root/ipvps/ipmini" | cut -d ' ' -f 2-6 | column -t | sort | uniq
+    grep -E "^###" "/root/permission/ipmini" | cut -d ' ' -f 2-6 | column -t | sort | uniq
+    grep -E "^#&" "/root/permission/ipmini" | cut -d ' ' -f 2-6 | column -t | sort | uniq
     echo ""
     read -p "Input IP Address To Delete : " ipdel
-    name=$(cat /root/ipvps/ipmini | grep $ipdel | awk '{print $2}')
-    oid=$(cat /root/ipvps/ipmini | grep $ipdel | awk '{print $3}')
-    exp=$(cat /root/ipvps/ipmini | grep $ipdel | awk '{print $4}')
+    name=$(cat /root/permission/ipmini | grep $ipdel | awk '{print $2}')
+    oid=$(cat /root/permission/ipmini | grep $ipdel | awk '{print $3}')
+    exp=$(cat /root/permission/ipmini | grep $ipdel | awk '{print $4}')
     if [[ ${exp} == 'Lifetime' ]]; then
-    sed -i "/^#& $name $oid $exp $ipdel/,/^},{/d" /root/ipvps/ipmini
+    sed -i "/^#& $name $oid $exp $ipdel/,/^},{/d" /root/permission/ipmini
     else
-    sed -i "/^### $name $oid $exp $ipdel/,/^},{/d" /root/ipvps/ipmini
+    sed -i "/^### $name $oid $exp $ipdel/,/^},{/d" /root/permission/ipmini
     fi
     cd /root/ipvps
     git config --global user.email "jarwokspremium@gmail.com" &> /dev/null
@@ -130,7 +130,7 @@ del-ip() {
     git branch -M main &> /dev/null
     git remote add origin https://github.com/pusoxx/permission
     git push -f https://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@github.com/pusoxx/permission.git &> /dev/nullll
-    rm -rf /root/ipvps
+    rm -rf /root/permission
     clear
     echo "Succesfully Deleted The IP Address"
     read -n 1 -s -r -p "Press any key to back on menu"
@@ -138,18 +138,18 @@ del-ip() {
 }
 
 renew-ip() {
-    rm -rf /root/ipvps
-    git clone https://github.com/pusoxx/permission.git /root/ipvps/ &> /dev/null
+    rm -rf /root/permission
+    git clone https://github.com/pusoxx/permission.git /root/permission/ &> /dev/null
     clear
     echo "List IP Address Have Been Registered"
     echo ""
-    grep -E "^###" "/root/ipvps/ipmini" | cut -d ' ' -f 2-6 | column -t | sort | uniq
+    grep -E "^###" "/root/permission/ipmini" | cut -d ' ' -f 2-6 | column -t | sort | uniq
     echo ""
     read -p "Input IP Address To Renew : " ipdel
     read -p "Input Days  : " days
-    name=$(cat /root/ipvps/ip | grep $ipdel | awk '{print $2}')
-    oid=$(cat /root/ipvps/ip | grep $ipdel | awk '{print $3}')
-    exp=$(cat /root/ipvps/ip | grep $ipdel | awk '{print $4}')
+    name=$(cat /root/permission/ipmini | grep $ipdel | awk '{print $2}')
+    oid=$(cat /root/permission/ipmini | grep $ipdel | awk '{print $3}')
+    exp=$(cat /root/permission/ipmini | grep $ipdel | awk '{print $4}')
     now=$(date +%Y-%m-%d)
     d1=$(date -d "$exp" +%s)
     d2=$(date -d "$now" +%s)
@@ -157,7 +157,7 @@ renew-ip() {
     exp3=$(($exp2 + $days))
     exp4=`date -d "$exp3 days" +"%Y-%m-%d"`
     sed -i "s/### $name $oid $exp $ipdel/### $name $oid $exp4 $ipdel/g" /root/ipvps/ipmini
-    cd /root/ipvps
+    cd /root/permission
     git config --global user.email "jarwokspremium@gmail.com" &> /dev/null
     git config --global user.name "pusoxx" &> /dev/null
     rm -rf .git &> /dev/null
@@ -167,7 +167,7 @@ renew-ip() {
     git branch -M main &> /dev/null
     git remote add origin https://github.com/pusoxx/permission
     git push -f https://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@github.com/pusoxx/permission.git &> /dev/null
-    rm -rf /root/ipvps
+    rm -rf /root/permission
     clear
     echo "Succesfully Renew The IP Address"
     echo ""
