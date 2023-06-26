@@ -293,7 +293,7 @@ echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━�
 echo -e "${BIYellow}                  MENU TAMBAHAN${NC} "
 echo -e "${BIGreen} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "     ${BIGreen}[${BIWhite}11${BIGreen}]${BIBlue} •${NC} ${BIYellow} DOMAIN FREE        $NC ${BIGreen}[${BIWhite}17${BIGreen}]${BIBlue} •${NC} ${BIYellow} BOT TELEGRAM "
-echo -e "     ${BIGreen}[${BIWhite}12${BIGreen}]${BIBlue} •${NC} ${BIYellow} UPDATE MENU       $NC ${BIGreen}[${BIWhite}18${BIGreen}]${BIBlue} •${NC} ${BIYellow} WEBMIN MENU "
+echo -e "     ${BIGreen}[${BIWhite}12${BIGreen}]${BIBlue} •${NC} ${BIYellow} UPDATE MENU        $NC ${BIGreen}[${BIWhite}18${BIGreen}]${BIBlue} •${NC} ${BIYellow} WEBMIN MENU "
 echo -e "     ${BIGreen}[${BIWhite}13${BIGreen}]${BIBlue} •${NC} ${BIYellow} INSTAL UDP${NC} "
 echo -e "     ${BIGreen}[${BIWhite}14${BIGreen}]${BIBlue} •${NC} ${BIYellow} GANTI NS DOMAIN${NC} "
 echo -e "     ${BIGreen}[${BIWhite}15${BIGreen}]${BIBlue} •${NC} ${BIYellow} INSTALL TCP BBR${NC} "
