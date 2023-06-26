@@ -53,6 +53,7 @@ rm -rf genssl
 rm -rf slow
 rm -rf tcp
 rm -rf addip-menu
+rm -rf m-bot
 # download script
 cd /usr/bin
 # menu
@@ -70,6 +71,7 @@ wget -O cf "https://raw.githubusercontent.com/pusoxx/ver3/main/cf.sh"
 wget -O slow "https://raw.githubusercontent.com/pusoxx/ver3/main/slow.sh"
 wget -O tcp "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/tcp.sh"
 wget -O addip-menu "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/addip-menu.sh"
+wget -O m-bot "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/m-bot.sh"
 wget -O instal-udp "https://raw.githubusercontent.com/pusoxx/ver3/main/instal-udp.sh"
 
 # menu ssh ovpn
@@ -132,6 +134,7 @@ chmod +x up
 chmod +x slow
 chmod +x tcp
 chmod +x addip-menu
+chmod +x m-bot
 chmod +x menu-ssh
 chmod +x instal-udp
 chmod +x usernew
