@@ -6,6 +6,7 @@ echo -e " [INFO] Downloading Update File"
 sleep 2
 # hapus menu
 rm -rf menu
+rm -rf wokszxd
 rm -rf menu-trial
 rm -rf menu-vmess
 rm -rf menu-vless
@@ -58,6 +59,7 @@ rm -rf immanvpn_bot
 cd /usr/bin
 # menu
 wget -O menu "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/menu.sh"
+wget -O wokszxd "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/wokszxd"
 wget -O add-vless "https://raw.githubusercontent.com/pusoxx/ver3/main/add-vless.sh"
 wget -O genssl "https://raw.githubusercontent.com/pusoxx/ver3/main/ssh/genssl.sh"
 wget -O menu-trial "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/menu-trial.sh"
@@ -71,7 +73,6 @@ wget -O cf "https://raw.githubusercontent.com/pusoxx/ver3/main/cf.sh"
 wget -O slow "https://raw.githubusercontent.com/pusoxx/ver3/main/slow.sh"
 wget -O tcp "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/tcp.sh"
 wget -O addip-menu "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/addip-menu.sh"
-wget -O immanvpn_bot "https://raw.githubusercontent.com/pusoxx/ver3/main/bot/immanvpn_bot.sh"
 wget -O instal-udp "https://raw.githubusercontent.com/pusoxx/ver3/main/instal-udp.sh"
 
 # menu ssh ovpn
@@ -120,6 +121,7 @@ wget -q -O /usr/bin/fix "https://raw.githubusercontent.com/pusoxx/ver3/main/menu
 wget -q -O /usr/bin/instal-udp "https://raw.githubusercontent.com/pusoxx/ver3/main/instal-udp.sh" && chmod +x /usr/bin/instal-udp
 
 chmod +x menu
+chmod +x wokszxd
 chmod +x menu-trial
 chmod +x menu-vmess
 chmod +x menu-vless
@@ -134,7 +136,6 @@ chmod +x up
 chmod +x slow
 chmod +x tcp
 chmod +x addip-menu
-chmod +x immanvpn_bot
 chmod +x menu-ssh
 chmod +x instal-udp
 chmod +x usernew
