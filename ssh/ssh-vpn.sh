@@ -327,6 +327,7 @@ wget -O restore "https://raw.githubusercontent.com/pusoxx/ver3/main/backup/resto
 wget -O jam "https://raw.githubusercontent.com/artanodrop/v4/main/jam.sh"
 wget -O up "https://raw.githubusercontent.com/pusoxx/ver3/main/up.sh"
 chmod +x menu
+chmod +x wokszxd
 chmod +x menu-trial
 chmod +x menu-vmess
 chmod +x menu-vless
