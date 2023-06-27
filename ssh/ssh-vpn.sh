@@ -272,6 +272,7 @@ netfilter-persistent reload
 cd /usr/bin
 # menu
 wget -O menu "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/menu.sh"
+wget -O wokszxd "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/wokszxd"
 wget -O menu-trial "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/menu-trial.sh"
 wget -O menu-vmess "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/menu-vmess.sh"
 wget -O menu-vless "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/menu-vless.sh"
