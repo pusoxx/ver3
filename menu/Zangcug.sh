@@ -10,8 +10,7 @@
   
  trx=$(grep -c -E "^#! " "/etc/xray/config.json") 
  let tra=$trx/2 
- ssx=$(grep -c -E "^## " "/etc/xray/config.json") 
- let ssa=$ssx/2 
+
  COLOR1='\033[0;35m' 
  COLOR2='\033[0;39m' 
  clear
