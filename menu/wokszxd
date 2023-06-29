@@ -290,15 +290,15 @@ echo -e "${BIRU}│ ${PUTIH} SSH  ${NC}: $ressh"" │ ${PUTIH} NGINX ${NC}: $res
 echo -e "${BIRU}└─────────────────────────────────────────────────────┘${NC}"
   
 echo -e "${BIRU} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e " ${BIRU}|   [${BIWhite}01${BIRU}]${ZIL} SSH     ${BIRU}[${BIYellow}Menu${BIRU}]${NC}"    "   ${BIRU}[${BIWhite}10${BIRU}]${ZIL} AUTO REBOOT   ${NC}" "${BIRU}       |"
-echo -e " ${BIRU}|   [${BIWhite}02${BIRU}]${ZIL} VMESS   ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "   ${BIRU}[${BIWhite}11${BIRU}]${ZIL} DOMAIN FREE${NC}" "${BIRU}          |"
-echo -e " ${BIRU}|   [${BIWhite}03${BIRU}]${ZIL} VLESS   ${BIRU}[${BIYellow}Menu${BIRU}]${NC}"  "   ${BIRU}[${BIWhite}12${BIRU}]${ZIL} UPDATE SCRIPT${NC}" "${BIRU}        |"
+echo -e " ${BIRU}|   [${BIWhite}01${BIRU}]${ZIL} SSH OVPN MANAGER${NC}"    "                       ${BIRU}[${BIWhite}10${BIRU}]${ZIL} AUTO REBOOT   ${NC}" "${BIRU}       |"
+echo -e " ${BIRU}|   [${BIWhite}02${BIRU}]${ZIL} VMESS MANAGER${NC}" "                             ${BIRU}[${BIWhite}11${BIRU}]${ZIL} DOMAIN FREE${NC}" "${BIRU}          |"
+echo -e " ${BIRU}|   [${BIWhite}03${BIRU}]${ZIL} VLESS MANAGER${NC}"  "                            ${BIRU}[${BIWhite}12${BIRU}]${ZIL} UPDATE SCRIPT${NC}" "${BIRU}        |"
 echo -e " ${BIRU}|   [${BIWhite}04${BIRU}]${ZIL} TROJAN  ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "   ${BIRU}[${BIWhite}13${BIRU}]${ZIL} INSTALL UDP${NC}" "${BIRU}          |"
 echo -e " ${BIRU}|   [${BIWhite}05${BIRU}]${ZIL} SETTINGS ${BIRU}[${BIYellow}Menu${BIRU}]${NC}"  "  ${BIRU}[${BIWhite}14${BIRU}]${ZIL} GANTI NS SLOWDNS${NC}" "${BIRU}     |"
 echo -e " ${BIRU}|   [${BIWhite}06${BIRU}]${ZIL} TRIAL   ${BIRU}[${BIYellow}Menu${BIRU}]${NC}"  "   ${BIRU}[${BIWhite}15${BIRU}]${ZIL} INSTALL TCP${NC}" "${BIRU}          |"
 echo -e " ${BIRU}|   [${BIWhite}07${BIRU}]${ZIL} BACKUP  ${BIRU}[${BIYellow}Menu${BIRU}]${NC}"  "   ${BIRU}[${BIWhite}16${BIRU}]${ZIL} REG IP${NC}" "${BIRU}               |" 
 echo -e " ${BIRU}|   [${BIWhite}08${BIRU}]${ZIL} DOMAIN  ${BIRU}[${BIYellow}Menu${BIRU}]${NC}"  "   ${BIRU}[${BIWhite}17${BIRU}]${ZIL} WEBMIN MANAGER${NC}" "${BIRU}       |"
-echo -e " ${BIRU}|   [${BIWhite}09${BIRU}]${ZIL} RUNNING SYSTEM${NC}"  "   ${BIRU}[${BIWhite}99${BIRU}]${ZIL} CLEAR CACHE${NC}" "${BIRU}          |"
+echo -e " ${BIRU}|   [${BIWhite}09${BIRU}]${ZIL} RUNNING SYSTEM${NC}"  "                            ${BIRU}[${BIWhite}18${BIRU}]${ZIL} BOT MANAGER${NC}" "${BIRU}          |"
 echo -e " ${BIRU}└─────────────────────────────────────────────────────┘${NC}"
 echo ""
 read -p " Select menu : " opt
@@ -321,7 +321,7 @@ case $opt in
 15) clear ; tcp ;;
 16) clear ; addip-menu ;;
 17) clear ; menu-webmin ;;
-99) clear ; clearcache ;;
+18) clear ; menu-bot ;;
 0) clear ; wokszxd ;;
 x) exit ;;
 *) echo -e "" ; echo "Press any key to back exit" ; sleep 1 ; exit ;;
