@@ -91,23 +91,22 @@ echo -e "GET wss://BUG/worryfree HTTP/1.1[crlf]Host: [host]User-Agent: [ua]Upgra
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 echo -e "\E[40;1;37m          𝗢𝗽𝗲𝗻𝗩𝗣𝗡            \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
-echo -e "OpenVPN WS SSL   : https://$domen:81/"$domen"-ws-ssl.ovpn"
-echo -e "OpenVPN SSL      : https://$domen:81/"$domen"-ssl.ovpn"
-echo -e "OpenVPN TCP      : https://$domen:81/"$domen"-tcp.ovpn"
-echo -e "OpenVPN UDP      : https://$domen:81/"$domen"-udp.ovpn"
+echo -e "OpenVPN TCP : 1194 http://$IP:81/client-tcp-1194.ovpn"
+echo -e "OpenVPN UDP : 2200 http://$IP:81/client-udp-2200.ovpn"
+echo -e "OpenVPN SSL : 110 http://$IP:81/client-tcp-ssl.ovpn"
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Expired On  : $exp" | tee -a /etc/log-create-user.log
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 echo -e "${CYAN}    Terimakasih sudah menggunakan-
-                       Script Credit by Assassin"
+                       Script Credit by WokszXD"
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 
 else
 
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m        𝗔𝗦𝗦𝗔𝗦𝗦𝗜𝗡 𝗧𝗨𝗡𝗡𝗘𝗟𝗜𝗡𝗚           \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37m      𝗔𝗖𝗖𝗢𝗨𝗡𝗧 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗧𝗜𝗢𝗡           \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 
 echo -e "\E[40;1;37m           𝗦𝗦𝗛/𝗗𝗿𝗼𝗽𝗯𝗲𝗮𝗿           \E[0m" | tee -a /etc/log-create-user.log
@@ -153,17 +152,16 @@ echo -e "GET wss://BUG/worryfree HTTP/1.1[crlf]Host: [host]User-Agent: [ua]Upgra
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 echo -e "\E[40;1;37m          𝗢𝗽𝗲𝗻𝗩𝗣𝗡            \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
-echo -e "OpenVPN WS SSL   : https://$domen:81/"$domen"-ws-ssl.ovpn"
-echo -e "OpenVPN SSL      : https://$domen:81/"$domen"-ssl.ovpn"
-echo -e "OpenVPN TCP      : https://$domen:81/"$domen"-tcp.ovpn"
-echo -e "OpenVPN UDP      : https://$domen:81/"$domen"-udp.ovpn"
+echo -e "OpenVPN TCP : 1194 http://$IP:81/client-tcp-1194.ovpn"
+echo -e "OpenVPN UDP : 2200 http://$IP:81/client-udp-2200.ovpn"
+echo -e "OpenVPN SSL : 110 http://$IP:81/client-tcp-ssl.ovpn"
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Expired On  : $exp" | tee -a /etc/log-create-user.log
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 echo -e "${CYAN}    Terimakasih sudah menggunakan-
-                       Script Credit by Assassin"
+                       Script Credit by WokszXD"
 echo -e "\e[33m————————————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 fi
 echo "" | tee -a /etc/log-create-user.log
