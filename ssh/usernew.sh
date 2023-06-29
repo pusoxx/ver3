@@ -26,6 +26,8 @@ read -p "Password : " Pass
 read -p "Expired (hari): " masaaktif
 
 IP=$(curl -sS ifconfig.me);
+tcp=`cat /root/log-install.txt | grep -w "OpenVPN TCP" | cut -f2 -d: | awk '{print $6}'`
+udp=`cat /root/log-install.txt | grep -w "OpenVPN UDP" | cut -f2 -d: | awk '{print $6}'`
 ossl=`cat /root/log-install.txt | grep -w "OpenVPN" | cut -f2 -d: | awk '{print $6}'`
 opensh=`cat /root/log-install.txt | grep -w "OpenSSH" | cut -f2 -d: | awk '{print $1}'`
 db=`cat /root/log-install.txt | grep -w "Dropbear" | cut -f2 -d: | awk '{print $1,$2}'`
