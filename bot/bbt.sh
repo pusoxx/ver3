@@ -7,7 +7,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 ipsaya=$(wget -qO- ipinfo.io/ip)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
-data_ip="https://raw.githubusercontent.com/pusoxx/permission/main/ipminu"
+data_ip="https://raw.githubusercontent.com/pusoxx/permission/main/ipmini"
 checking_sc() {
   useexp=$(wget -qO- $data_ip | grep $ipsaya | awk '{print $3}')
   if [[ $date_list < $useexp ]]; then
