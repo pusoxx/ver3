@@ -283,6 +283,7 @@ wget -O menu-trojan "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/men
 wget -O cf "https://raw.githubusercontent.com/pusoxx/ver3/main/cf.sh"
 wget -O tcp "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/tcp.sh"
 wget -O addip-menu "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/addip-menu.sh"
+wget -O shadowsocks "https://raw.githubusercontent.com/pusoxx/ver3/main/xray/shadowsocks.sh"
 
 # menu ssh ovpn
 wget -O menu-ssh "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/menu-ssh.sh"
