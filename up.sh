@@ -54,7 +54,10 @@ rm -rf genssl
 rm -rf slow
 rm -rf tcp
 rm -rf addip-menu
-rm -rf immanvpn_bot
+rm -rf bot
+rm -rf add-bot-notif
+rm -rf del-bot-notif
+rm -rf menu-bot
 # download script
 cd /usr/bin
 # menu
@@ -120,6 +123,12 @@ wget -q -O /usr/bin/up "https://raw.githubusercontent.com/pusoxx/ver3/main/up.sh
 wget -q -O /usr/bin/fix "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/fix.sh" && chmod +x /usr/bin/fix
 wget -q -O /usr/bin/instal-udp "https://raw.githubusercontent.com/pusoxx/ver3/main/instal-udp.sh" && chmod +x /usr/bin/instal-udp
 
+#bot
+wget -O bot "https://raw.githubusercontent.com/pusoxx/ver3/main/bot/bot.sh"
+wget -O add-bot-notif "https://raw.githubusercontent.com/pusoxx/ver3/main/bot/add-bot-notif.sh"
+wget -O del-bot-notif "https://raw.githubusercontent.com/pusoxx/ver3/main/bot/del-bot-notif.sh"
+wget -O menu-bot "https://raw.githubusercontent.com/pusoxx/ver3/main/bot/menu-bot.sh"
+
 chmod +x menu
 chmod +x wokszxd
 chmod +x menu-trial
@@ -172,6 +181,11 @@ chmod +x menu-backup
 chmod +x backup
 chmod +x restore
 chmod +x jam
+
+chmod +x bot
+chmod +x add-bot-notif
+chmod +x del-bot-notif
+chmod +x menu-bot
 echo -e " [INFO] Update Successfully"
 sleep 2
 exit
