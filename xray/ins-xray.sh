@@ -632,6 +632,13 @@ wget -O deltrgo "https://raw.githubusercontent.com/pusoxx/ver3/main/xray/deltrgo
 wget -O renewtrgo "https://raw.githubusercontent.com/pusoxx/ver3/main/xray/renewtrgo.sh" && chmod +x renewtrgo
 wget -O cektrgo "https://raw.githubusercontent.com/pusoxx/ver3/main/xray/cektrgo.sh" && chmod +x cektrgo
 
+# shadowsock
+wget -O add-ss "https://raw.githubusercontent.com/pusoxx/ver3/main/xray/add-ss.sh" && chmod +x add-ss
+wget -O triall-ss "https://raw.githubusercontent.com/pusoxx/ver3/main/xray/triall-ss.sh" && chmod triall-ss
+wget -O del-ss "https://raw.githubusercontent.com/pusoxx/ver3/main/xray/del-ss.sh" && chmod +x del-ss
+wget -O renew-ss "https://raw.githubusercontent.com/pusoxx/ver3/main/xray/renew-ss.sh" && chmod +x renew-ss
+wget -O cek-ss "https://raw.githubusercontent.com/pusoxx/ver3/main/xray/cek-ss.sh" && chmod +x cek-ss
+wget -O usage-akun-xray-ss "https://raw.githubusercontent.com/pusoxx/ver3/main/xray/usage-akun-xray-ss.sh" && chmod +x usage-akun-xray-ss
 
 sleep 1
 yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }
