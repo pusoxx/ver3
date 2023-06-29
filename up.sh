@@ -58,6 +58,13 @@ rm -rf bot
 rm -rf add-bot-notif
 rm -rf del-bot-notif
 rm -rf menu-bot
+rm -rf shadowsocks
+rm -rf add-ss
+rm -rf triall-ss
+rm -rf del-ss
+rm -rf renew-ss
+rm -rf cek-ss
+rm -rf usage-akun-xray-ss
 # download script
 cd /usr/bin
 # menu
@@ -77,6 +84,7 @@ wget -O slow "https://raw.githubusercontent.com/pusoxx/ver3/main/slow.sh"
 wget -O tcp "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/tcp.sh"
 wget -O addip-menu "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/addip-menu.sh"
 wget -O instal-udp "https://raw.githubusercontent.com/pusoxx/ver3/main/instal-udp.sh"
+wget -O shadowsocks "https://raw.githubusercontent.com/pusoxx/ver3/main/xray/shadowsocks.sh"
 
 # menu ssh ovpn
 wget -O menu-ssh "https://raw.githubusercontent.com/pusoxx/ver3/main/menu/menu-ssh.sh"
@@ -128,6 +136,14 @@ wget -O bot "https://raw.githubusercontent.com/pusoxx/ver3/main/bot/bot.sh"
 wget -O add-bot-notif "https://raw.githubusercontent.com/pusoxx/ver3/main/bot/add-bot-notif.sh"
 wget -O del-bot-notif "https://raw.githubusercontent.com/pusoxx/ver3/main/bot/del-bot-notif.sh"
 wget -O menu-bot "https://raw.githubusercontent.com/pusoxx/ver3/main/bot/menu-bot.sh"
+
+#shadowsocks
+wget -O add-ss "https://raw.githubusercontent.com/pusoxx/ver3/main/xray/add-ss.sh"
+wget -O triall-ss "https://raw.githubusercontent.com/pusoxx/ver3/main/xray/triall-ss.sh"
+wget -O del-ss "https://raw.githubusercontent.com/pusoxx/ver3/main/xray/del-ss.sh"
+wget -O renew-ss "https://raw.githubusercontent.com/pusoxx/ver3/main/xray/renew-ss.sh"
+wget -O cek-ss "https://raw.githubusercontent.com/pusoxx/ver3/main/xray/cek-ss.sh"
+wget -O usage-akun-xray-ss "https://raw.githubusercontent.com/pusoxx/ver3/main/xray/usage-akun-xray-ss.sh"
 
 chmod +x menu
 chmod +x wokszxd
@@ -186,6 +202,14 @@ chmod +x bot
 chmod +x add-bot-notif
 chmod +x del-bot-notif
 chmod +x menu-bot
+
+chmod +x shadowsocks
+chmod +x add-ss
+chmod +x triall-ss
+chmod +x del-ss
+chmod +x renew-ss
+chmod +x cek-ss
+chmod +x usage-akun-xray-ss
 echo -e " [INFO] Update Successfully"
 sleep 2
 exit
