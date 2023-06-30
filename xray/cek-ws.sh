@@ -40,4 +40,4 @@ rm -rf /tmp/other.txt
 
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+wokszxd
