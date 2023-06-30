@@ -62,9 +62,9 @@ case $menu in
     usage-akun-xray-ss
     ;;
 0)
-    menu
+    wokszxd
     ;;
 *)
-    menu
+    wokszxd
     ;;
 esac
