@@ -65,4 +65,4 @@ echo -e "Script Mod By ARTA M"
 echo "" | tee -a /etc/log-create-user.log
 read -n 1 -s -r -p "Press any key to back on menu"
 
-menu
+wokszxd
