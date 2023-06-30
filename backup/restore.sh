@@ -1,5 +1,5 @@
 #!/bin/bash
-# SL
+# HT Cloud
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -13,7 +13,6 @@ LIGHT='\033[0;37m'
 # ==========================================
 # Getting
 clear
-figlet "Restore" | lolcat
 echo "This Feature Can Only Be Used According To Vps Data With This Autoscript"
 echo "Please input link to your vps data backup file."
 echo "You can check it on your email if you run backup data vps before."
@@ -28,16 +27,11 @@ cp passwd /etc/
 cp group /etc/
 cp shadow /etc/
 cp gshadow /etc/
-cp chap-secrets /etc/ppp/
-cp passwd1 /etc/ipsec.d/passwd
-cp -r crot /var/lib/
-cp -r sstp /home/
-cp -r xray /etc/
-cp -r trojan-go /etc/
-cp -r shadowsocksr /usr/local/
-cp -r public_html /home/vps/
-cp crontab /etc/
+cp -r html /var/www/
+mv *.json /etc/xray >/dev/null
+systemctl reload xray >/dev/null 2>&1
+cd
 strt
 rm -rf /root/backup
 rm -f backup.zip
-echo "Restore Berhasil!!!" | lolcat
+echo Done

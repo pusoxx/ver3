@@ -1,5 +1,5 @@
 #!/bin/bash
-# SL
+# HT Cloud
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -25,18 +25,14 @@ $email
 EOF
 fi
 clear
-figlet "Backup"
 echo "Mohon Menunggu , Proses Backup sedang berlangsung !!"
-rm -rf /root/backup
-mkdir /root/backup
+    mkdir -p /root/backup
+cp -r /etc/xray/config.json backup/ >/dev/null 2>&1
 cp /etc/passwd backup/
 cp /etc/group backup/
 cp /etc/shadow backup/
 cp /etc/gshadow backup/
-cp -r /etc/xray backup/xray
-cp -r /root/nsdomain backup/nsdomain
-cp -r /etc/slowdns backup/slowdns
-cp -r /home/vps/public_html backup/public_html
+cp -r /var/www/html backup/html
 cd /root
 zip -r $IP-$date.zip backup > /dev/null 2>&1
 rclone copy /root/$IP-$date.zip dr:backup/
